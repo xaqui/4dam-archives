@@ -26,8 +26,8 @@
           :src="resolvedMediaUrl"
           loading="lazy"
           spinner-color="white"
-          width="595px"
-          height="595px"
+          width="480px"
+          height="480px"
           fit="contain"
           class="rounded-borders archive-image"
           @error="useFallbackImage"
@@ -125,6 +125,7 @@ export default {
 
 .archive-image {
   max-width: 100%;
+  max-height: 480px;
   background: rgba(0, 0, 0, 0.04);
 }
 
