@@ -24,7 +24,7 @@ function validateArchive(archive) {
 }
 
 async function fetchArchive() {
-  const response = await fetch("/archive.json");
+  const response = await fetch("archive.json");
 
   if (!response.ok) {
     throw new Error(`Archive request failed with status ${response.status}.`);

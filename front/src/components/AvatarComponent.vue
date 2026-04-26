@@ -51,7 +51,7 @@
 </style>
 
 <script>
-const FALLBACK_AVATAR = "/img/unknown-avatar.png";
+const FALLBACK_AVATAR = "img/unknown-avatar.png";
 
 export default {
   props: {

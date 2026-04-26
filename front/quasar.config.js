@@ -55,13 +55,13 @@ module.exports = configure(function (/* ctx */) {
       },
 
       vueRouterMode: "hash", // available values: 'hash', 'history'
+      publicPath: "/4dam-archives/",
       // vueRouterBase,
       // vueDevtools,
       // vueOptionsAPI: false,
 
       // rebuildCache: true, // rebuilds Vite/linter/etc cache on startup
 
-      // publicPath: '/',
       // analyze: true,
       // env: {},
       // rawDefine: {}

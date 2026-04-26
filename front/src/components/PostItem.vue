@@ -49,7 +49,7 @@
 import { format, formatDistance } from "date-fns";
 import AvatarComponent from "../components/AvatarComponent.vue";
 
-const FALLBACK_POST_IMAGE = "/img/default-placeholder.png";
+const FALLBACK_POST_IMAGE = "img/default-placeholder.png";
 
 export default {
   components: {

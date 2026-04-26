@@ -5,6 +5,7 @@ const path = require("path");
 
 const DEFAULT_INPUT_DIR = "db/dumps";
 const DEFAULT_OUTPUT_FILE = "front/public/archive.json";
+const DEFAULT_FIRESTORE_FILE = "db/firestore-legacy.json";
 const TARGET_TABLES = new Set(["users", "posts", "post_score"]);
 
 function parseArgs(argv) {
@@ -115,6 +116,17 @@ function createState() {
     userRevisionsByUid: new Map(),
     canonicalPostsById: new Map(),
     postScoresByKey: new Map(),
+    firestoreUsersById: new Map(),
+    firestorePostsById: new Map(),
+    firestoreStats: {
+      included: false,
+      usersRead: 0,
+      postsRead: 0,
+      usersImported: 0,
+      postsImported: 0,
+      postsDropped: 0,
+      exactDuplicatesDropped: 0,
+    },
     warnings: [],
     voteRowCount: 0,
     fileStats: [],
@@ -416,7 +428,153 @@ function getLatestUserSnapshot(uid, revisions) {
   };
 }
 
-function buildArchive(state, dumpFiles) {
+function makePostExactKey(date, content, mediaUrl) {
+  return [date, (content || "").trim(), mediaUrl || ""].join("|");
+}
+
+function normalizeFirestoreUser(doc) {
+  const data = doc && typeof doc === "object" ? doc.data || {} : {};
+  const uid = normalizeEmptyString(data.userId || doc.id);
+  if (!uid) {
+    return null;
+  }
+
+  return {
+    uid,
+    displayName: normalizeEmptyString(data.displayName),
+    nick: null,
+    avatar: normalizeEmptyString(data.photoURL),
+  };
+}
+
+function parseFirestoreUser(doc, state) {
+  state.firestoreStats.usersRead += 1;
+  const user = normalizeFirestoreUser(doc);
+  if (!user) {
+    addWarning(state, `Skipping Firestore user without uid: ${doc && doc.id ? doc.id : "unknown"}`);
+    return;
+  }
+
+  const existing = state.firestoreUsersById.get(user.uid);
+  if (
+    existing &&
+    (existing.displayName !== user.displayName ||
+      existing.nick !== user.nick ||
+      existing.avatar !== user.avatar)
+  ) {
+    addWarning(state, `Firestore user ${user.uid} changed across documents; latest wins.`);
+  }
+
+  if (!existing) {
+    state.firestoreStats.usersImported += 1;
+  }
+
+  state.firestoreUsersById.set(user.uid, user);
+}
+
+function buildFirestoreAuthorSnapshot(user) {
+  if (!user || user.displayName === "Anonymous") {
+    return null;
+  }
+
+  return {
+    uid: user.uid,
+    displayName: user.displayName,
+    nick: null,
+    avatar: user.avatar,
+  };
+}
+
+function normalizeFirestorePost(doc, firestoreUsersById) {
+  const data = doc && typeof doc === "object" ? doc.data || {} : {};
+  const id = normalizeEmptyString(doc.id);
+  const date = Number(data.date);
+  if (!id || !Number.isFinite(date)) {
+    return null;
+  }
+
+  const mediaUrl = normalizeEmptyString(data.imageURL);
+  const rawUserId = normalizeEmptyString(data.userId);
+  const points = Number.isFinite(Number(data.liked)) ? Number(data.liked) : 0;
+  const linkedUser =
+    rawUserId && rawUserId !== "NONE" ? firestoreUsersById.get(rawUserId) || null : null;
+  const authorSnapshot = buildFirestoreAuthorSnapshot(linkedUser);
+
+  return {
+    id,
+    date,
+    content: data.content == null ? null : data.content,
+    media_url: mediaUrl,
+    owner: rawUserId && rawUserId !== "NONE" ? rawUserId : null,
+    show_name: Boolean(authorSnapshot),
+    points,
+    author_snapshot: authorSnapshot,
+  };
+}
+
+function parseFirestorePost(doc, state, firestoreUsersById) {
+  state.firestoreStats.postsRead += 1;
+  const post = normalizeFirestorePost(doc, firestoreUsersById);
+  if (!post) {
+    state.firestoreStats.postsDropped += 1;
+    addWarning(state, `Skipping malformed Firestore post: ${doc && doc.id ? doc.id : "unknown"}`);
+    return;
+  }
+
+  const existing = state.firestorePostsById.get(post.id);
+  if (existing && JSON.stringify(existing) !== JSON.stringify(post)) {
+    addWarning(state, `Firestore post ${post.id} changed across documents; latest wins.`);
+  }
+
+  if (!existing) {
+    state.firestoreStats.postsImported += 1;
+  }
+
+  state.firestorePostsById.set(post.id, post);
+}
+
+function readFirestoreLegacy(firestorePath, state, verbose) {
+  if (!fs.existsSync(firestorePath)) {
+    if (verbose) {
+      console.log(`Firestore legacy source not found: ${firestorePath}`);
+    }
+    return;
+  }
+
+  state.firestoreStats.included = true;
+
+  let parsed;
+  try {
+    parsed = JSON.parse(fs.readFileSync(firestorePath, "utf8"));
+  } catch (error) {
+    throw new Error(`Unable to parse Firestore legacy JSON: ${error.message}`);
+  }
+
+  if (!parsed || typeof parsed !== "object") {
+    throw new Error("Firestore legacy JSON must contain a top-level object.");
+  }
+
+  if (parsed.users != null && !Array.isArray(parsed.users)) {
+    throw new Error("Firestore legacy JSON field 'users' must be an array.");
+  }
+
+  if (parsed.posts != null && !Array.isArray(parsed.posts)) {
+    throw new Error("Firestore legacy JSON field 'posts' must be an array.");
+  }
+
+  const users = parsed.users || [];
+  const posts = parsed.posts || [];
+
+  for (const user of users) {
+    parseFirestoreUser(user, state);
+  }
+
+  for (const post of posts) {
+    parseFirestorePost(post, state, state.firestoreUsersById);
+  }
+}
+
+function buildSqlPosts(state) {
   const pointsByPostId = new Map();
   for (const score of state.postScoresByKey.values()) {
     const delta = score.upvote ? 1 : -1;
@@ -426,7 +584,7 @@ function buildArchive(state, dumpFiles) {
     );
   }
 
-  const posts = Array.from(state.canonicalPostsById.values())
+  return Array.from(state.canonicalPostsById.values())
     .map((postRecord) => {
       const revisions = state.userRevisionsByUid.get(postRecord.row.owner);
       const authorSnapshot = resolveAuthorSnapshot(postRecord, revisions);
@@ -440,17 +598,80 @@ function buildArchive(state, dumpFiles) {
         points: pointsByPostId.get(postRecord.row.id) || 0,
         author_snapshot: authorSnapshot,
       };
-    })
-    .sort((left, right) => right.date - left.date || left.id.localeCompare(right.id));
-
-  const users = Array.from(state.userRevisionsByUid.entries())
-    .map(([uid, revisions]) => getLatestUserSnapshot(uid, revisions))
-    .filter(Boolean)
-    .sort((left, right) => {
-      const leftLabel = left.nick || left.displayName || left.uid;
-      const rightLabel = right.nick || right.displayName || right.uid;
-      return leftLabel.localeCompare(rightLabel) || left.uid.localeCompare(right.uid);
     });
+}
+
+function buildSqlUsers(state) {
+  return Array.from(state.userRevisionsByUid.entries())
+    .map(([uid, revisions]) => getLatestUserSnapshot(uid, revisions))
+    .filter(Boolean);
+}
+
+function buildFirestoreUsers(state) {
+  return Array.from(state.firestoreUsersById.values()).map((user) => ({
+    uid: user.uid,
+    displayName: user.displayName,
+    nick: user.nick,
+    avatar: user.avatar,
+  }));
+}
+
+function buildFirestorePosts(state) {
+  return Array.from(state.firestorePostsById.values());
+}
+
+function sortUsers(users) {
+  return users.sort((left, right) => {
+    const leftLabel = left.nick || left.displayName || left.uid;
+    const rightLabel = right.nick || right.displayName || right.uid;
+    return leftLabel.localeCompare(rightLabel) || left.uid.localeCompare(right.uid);
+  });
+}
+
+function buildFinalUsers(state) {
+  const sqlUsers = buildSqlUsers(state);
+  const firestoreUsers = buildFirestoreUsers(state);
+  const finalUsersByUid = new Map(sqlUsers.map((user) => [user.uid, user]));
+
+  for (const user of firestoreUsers) {
+    if (finalUsersByUid.has(user.uid)) {
+      addWarning(state, `UID collision between SQL and Firestore user ${user.uid}; SQL user kept.`);
+      continue;
+    }
+
+    finalUsersByUid.set(user.uid, user);
+  }
+
+  return sortUsers(Array.from(finalUsersByUid.values()));
+}
+
+function mergeFinalPosts(sqlPosts, firestorePosts, state) {
+  const exactKeys = new Set(
+    sqlPosts.map((post) => makePostExactKey(post.date, post.content, post.media_url))
+  );
+  const merged = [...sqlPosts];
+
+  for (const post of firestorePosts) {
+    const key = makePostExactKey(post.date, post.content, post.media_url);
+    if (exactKeys.has(key)) {
+      state.firestoreStats.exactDuplicatesDropped += 1;
+      continue;
+    }
+
+    exactKeys.add(key);
+    merged.push(post);
+  }
+
+  return merged.sort(
+    (left, right) => right.date - left.date || left.id.localeCompare(right.id)
+  );
+}
+
+function buildArchive(state, dumpFiles) {
+  const sqlPosts = buildSqlPosts(state);
+  const firestorePosts = buildFirestorePosts(state);
+  const posts = mergeFinalPosts(sqlPosts, firestorePosts, state);
+  const users = buildFinalUsers(state);
 
   const archive = {
     meta: {
@@ -467,6 +688,12 @@ function buildArchive(state, dumpFiles) {
         posts: posts.length,
         users: users.length,
       },
+      firestoreLegacyIncluded: state.firestoreStats.included,
+      firestoreLegacyPostCount: state.firestoreStats.postsRead,
+      firestoreLegacyUserCount: state.firestoreStats.usersRead,
+      firestoreLegacyImportedPosts: state.firestoreStats.postsImported,
+      firestoreLegacyImportedUsers: state.firestoreStats.usersImported,
+      firestoreLegacyDroppedExactDuplicates: state.firestoreStats.exactDuplicatesDropped,
     },
     users,
     posts,
@@ -479,6 +706,13 @@ function buildArchive(state, dumpFiles) {
       users: users.length,
       votes: state.postScoresByKey.size,
       resolvedAuthors: posts.filter((post) => post.author_snapshot !== null).length,
+      firestoreIncluded: state.firestoreStats.included,
+      firestoreUsersRead: state.firestoreStats.usersRead,
+      firestorePostsRead: state.firestoreStats.postsRead,
+      firestoreUsersImported: state.firestoreStats.usersImported,
+      firestorePostsImported: state.firestoreStats.postsImported,
+      firestorePostsDropped: state.firestoreStats.postsDropped,
+      firestoreExactDuplicatesDropped: state.firestoreStats.exactDuplicatesDropped,
       warnings: state.warnings.length,
     },
   };
@@ -545,6 +779,15 @@ function printSummary(summary, dumpFiles, outputPath, verbose, fileStats) {
   console.log(`Unique users with revisions: ${summary.users}`);
   console.log(`Vote rows merged: ${summary.votes}`);
   console.log(`Posts with resolved author snapshots: ${summary.resolvedAuthors}`);
+  console.log(`Firestore legacy included: ${summary.firestoreIncluded ? "yes" : "no"}`);
+  console.log(`Firestore users read: ${summary.firestoreUsersRead}`);
+  console.log(`Firestore posts read: ${summary.firestorePostsRead}`);
+  console.log(`Firestore users imported: ${summary.firestoreUsersImported}`);
+  console.log(`Firestore posts imported: ${summary.firestorePostsImported}`);
+  console.log(`Firestore posts dropped: ${summary.firestorePostsDropped}`);
+  console.log(
+    `Firestore exact duplicates dropped: ${summary.firestoreExactDuplicatesDropped}`
+  );
   console.log(`Warnings: ${summary.warnings}`);
   console.log(`Archive written to: ${outputPath}`);
 
@@ -564,6 +807,7 @@ function main() {
   const rootDir = path.resolve(__dirname, "..");
   const inputDir = path.resolve(rootDir, options.input);
   const outputPath = path.resolve(rootDir, options.output);
+  const firestorePath = path.resolve(rootDir, DEFAULT_FIRESTORE_FILE);
 
   const dumpFiles = discoverDumpFiles(inputDir);
   const state = createState();
@@ -571,6 +815,8 @@ function main() {
   for (const file of dumpFiles) {
     processDumpFile(file, state);
   }
+
+  readFirestoreLegacy(firestorePath, state, options.verbose);
 
   const { archive, stats } = buildArchive(state, dumpFiles);
   writeArchive(outputPath, archive, options.pretty);
