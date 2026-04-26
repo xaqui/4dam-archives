@@ -1,97 +1,70 @@
 <template>
-  <Profile @logout="handleLogout" v-if="user" />
-  <Login @loginWithGoogle="handleLoginWithGoogle" v-else />
+  <q-page class="relative-position">
+    <q-scroll-area class="absolute full-width full-height">
+      <load-error-component v-if="loadError" :message="loadError" />
+      <div v-else class="q-pa-md">
+        <div class="row items-center justify-center q-col-gutter-md">
+          <h4 class="q-mt-none q-mb-md text-weight-bold">People</h4>
+        </div>
+        <div class="row q-col-gutter-md">
+          <div
+            v-for="person in people"
+            :key="person.uid"
+            class="col-12 col-sm-6"
+          >
+            <q-card flat bordered class="full-height">
+              <q-card-section class="row items-center no-wrap q-col-gutter-md">
+                <div class="col-auto">
+                  <avatar-component :displayImage="true" :imageUrl="person.avatar" />
+                </div>
+                <div class="col">
+                  <div class="text-subtitle1 text-weight-bold">
+                    {{ person.nick || person.displayName || person.uid }}
+                  </div>
+                </div>
+              </q-card-section>
+            </q-card>
+          </div>
+        </div>
+        <q-item v-if="loading" class="row justify-center q-py-xl">
+          <q-spinner color="primary" size="2em" />
+        </q-item>
+      </div>
+    </q-scroll-area>
+  </q-page>
 </template>
 
 <script>
-import app from "src/boot/firebase";
-import {
-  onAuthStateChanged,
-  getAuth,
-  signOut,
-  signInWithPopup,
-  GoogleAuthProvider,
-} from "firebase/auth";
-import Login from "src/components/LoginComponent.vue";
-import Profile from "src/components/ProfileComponent.vue";
 import { defineComponent } from "vue";
-import { Notify } from "quasar";
-
-const auth = getAuth(app);
+import AvatarComponent from "../components/AvatarComponent.vue";
+import LoadErrorComponent from "../components/LoadErrorComponent.vue";
+import { getPeople } from "../services/archive";
 
 export default defineComponent({
-  name: "ProfilePage",
+  name: "PeoplePage",
+  components: {
+    AvatarComponent,
+    LoadErrorComponent,
+  },
   data() {
     return {
-      user: null,
+      people: [],
+      loading: true,
+      loadError: "",
     };
   },
-  created() {
-    onAuthStateChanged(auth, async (user) => {
-      if (user) {
-        await this.handleLoginResult(user).then(() => {
-          this.user = user;
-        });
-      }
-    });
-  },
-  components: {
-    Login,
-    Profile,
-  },
-  methods: {
-    async handleLoginWithGoogle() {
-      try {
-        const provider = new GoogleAuthProvider();
-        await signInWithPopup(auth, provider);
-        Notify.create({
-          type: "positive",
-          message: "Logged in successfully.",
-        });
-      } catch (error) {
-        Notify.create({
-          type: "negative",
-          message: "Error logging in. Please try again.",
-        });
-        //console.error(error.message);
-      }
-    },
-    async handleLogout() {
-      try {
-        await signOut(auth);
-        this.user = null;
-        this.$router.push({ name: "Profile" });
-        Notify.create({
-          type: "positive",
-          message: "Logged out.",
-        });
-      } catch (error) {
-        //console.error("Error signing out:", error.message);
-      }
-    },
-    async handleLoginResult(user) {
-      // Prepare user data
-      const userData = {
-        displayName: user.email == null ? null : user.displayName,
-        avatar: user.email == null ? null : user.photoURL,
-        uid: user.uid,
-        email: user.email,
-      };
+  async created() {
+    this.loading = true;
+    this.loadError = "";
 
-      try {
-        await this.$api.post("/users/", userData, {
-          headers: { "Content-Type": "application/json" },
-        });
-      } catch (error) {
-        // Notify.create({
-        //   type: "negative",
-        //   message: "Error sending data:" + error,
-        // });
-
-        // Log out the user if data update fails
-        this.handleLogout();
-      }
-    },
+    try {
+      this.people = await getPeople();
+    } catch (error) {
+      console.error(error);
+      this.loadError = "Unable to load archived people.";
+    } finally {
+      this.loading = false;
+    }
   },
 });
 </script>

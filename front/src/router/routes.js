@@ -16,7 +16,7 @@ const routes = [
       {
         path: "/profile",
         component: () => import("pages/ProfilePage.vue"),
-        name: "Profile",
+        name: "People",
       },
       {
         path: "/settings",
@@ -30,9 +30,6 @@ const routes = [
       },
     ],
   },
-
-  // Always leave this as last one,
-  // but you can also remove it
   {
     path: "/:catchAll(.*)*",
     component: () => import("pages/ErrorNotFound.vue"),

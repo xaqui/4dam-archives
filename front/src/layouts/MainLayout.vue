@@ -17,48 +17,45 @@
               <q-item-section avatar>
                 <q-icon name="fa-solid fa-home" size="sm" />
               </q-item-section>
-
-              <q-item-section class="text-h6 text-weight-bold gt-sm"
-                >Home</q-item-section
-              >
+              <q-item-section class="text-h6 text-weight-bold gt-sm">
+                Home
+              </q-item-section>
             </q-item>
 
             <q-item to="/profile" clickable v-ripple exact>
               <q-item-section avatar>
-                <q-icon name="fa-solid fa-user" size="sm" />
+                <q-icon name="fa-solid fa-user-group" size="sm" />
               </q-item-section>
-
-              <q-item-section class="text-h6 text-weight-bold gt-sm"
-                >Profile</q-item-section
-              >
+              <q-item-section class="text-h6 text-weight-bold gt-sm">
+                People
+              </q-item-section>
             </q-item>
 
             <q-item to="/ranking" clickable v-ripple exact>
               <q-item-section avatar>
                 <q-icon name="fa-solid fa-crown" size="sm" />
               </q-item-section>
-
-              <q-item-section class="text-h6 text-weight-bold gt-sm"
-                >Ranking</q-item-section
-              >
+              <q-item-section class="text-h6 text-weight-bold gt-sm">
+                Ranking
+              </q-item-section>
             </q-item>
+
             <q-item to="/settings" clickable v-ripple exact>
               <q-item-section avatar>
                 <q-icon name="fa-solid fa-gear" size="sm" />
               </q-item-section>
-
-              <q-item-section class="text-h6 text-weight-bold gt-sm"
-                >Settings</q-item-section
-              >
+              <q-item-section class="text-h6 text-weight-bold gt-sm">
+                Settings
+              </q-item-section>
             </q-item>
+
             <q-item to="/about" clickable v-ripple exact>
               <q-item-section avatar>
                 <q-icon name="help" size="sm" />
               </q-item-section>
-
-              <q-item-section class="text-h6 text-weight-bold gt-sm"
-                >About</q-item-section
-              >
+              <q-item-section class="text-h6 text-weight-bold gt-sm">
+                About
+              </q-item-section>
             </q-item>
           </q-list>
         </div>
@@ -68,9 +65,9 @@
             <div class="relative-position">
               <div class="row items-center justify-center header">
                 <div class="q-px-lg full-height q-py-md">
-                  <span class="gt-sm q-py-md text-weight-bold">{{
-                    $route.name
-                  }}</span>
+                  <span class="gt-sm q-py-md text-weight-bold">
+                    {{ $route.name }}
+                  </span>
                   <q-icon
                     class="q-pa-md lt-md"
                     name="img:img/logo.svg"
@@ -98,16 +95,8 @@
 </template>
 
 <script>
-import DarkModeMixin from "../mixins/darkMode";
-import AnonymousModeMixin from "../mixins/anonymousMode";
-import AnonymousPasswordMixin from "../mixins/anonymousPassword";
-import logo from "../assets/logo.svg";
-
 export default {
-  setup() {
-    return logo;
-  },
-  mixins: [DarkModeMixin, AnonymousModeMixin, AnonymousPasswordMixin],
+  name: "MainLayout",
 };
 </script>
 

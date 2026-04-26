@@ -1,13 +1,18 @@
 <template>
-  <q-page class="relative-position">
-    <div class="absolute-center full-height">
-      <div class="q-py-lg q-px-md row q-col-gutter-md">
-        <h5>
-          Oops! Something went wrong. Please refresh the page and try again.
-        </h5>
-      </div>
+  <div class="q-py-xl q-px-md row justify-center">
+    <div class="text-center">
+      <h5 class="q-my-none">{{ message }}</h5>
     </div>
-  </q-page>
+  </div>
 </template>
 
-<script></script>
+<script>
+export default {
+  props: {
+    message: {
+      type: String,
+      default: "Oops! Something went wrong. Please refresh the page and try again.",
+    },
+  },
+};
+</script>

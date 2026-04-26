@@ -1,108 +1,86 @@
 <template>
   <q-page class="relative-position">
     <q-scroll-area class="absolute full-width full-height">
-      <div class="row justify-center q-py-md header">
-        <q-btn
-          @click="showBestPosts()"
-          flat
-          round
-          :color="show_best ? 'yellow-8' : 'grey-8'"
-          icon="fa-solid fa-crown"
-        />
-        <span class="q-px-md"></span>
-        <q-btn
-          @click="showWorstPosts()"
-          flat
-          round
-          :color="!show_best ? 'brown-8' : 'grey-8'"
-          icon="fa-solid fa-poop"
-        />
-      </div>
-      <q-list separator>
-        <transition-group
-          appear
-          enter-active-class="animated fadeIn slower"
-          leave-active-class="animated fadeOut slower"
-        >
-          <post-item
-            @fetch-posts-event="fetchPostsDelegated"
-            v-for="post in posts"
-            :key="post.id"
-            :post="post"
+      <load-error-component v-if="loadError" :message="loadError" />
+      <div v-else>
+        <div class="row justify-center q-py-md header">
+          <q-btn
+            @click="loadBestPosts"
+            flat
+            round
+            :color="show_best ? 'yellow-8' : 'grey-8'"
+            icon="fa-solid fa-crown"
           />
-        </transition-group>
-      </q-list>
+          <span class="q-px-md"></span>
+          <q-btn
+            @click="loadWorstPosts"
+            flat
+            round
+            :color="!show_best ? 'brown-8' : 'grey-8'"
+            icon="fa-solid fa-poop"
+          />
+        </div>
+        <q-list separator>
+          <transition-group
+            appear
+            enter-active-class="animated fadeIn slower"
+            leave-active-class="animated fadeOut slower"
+          >
+            <post-item v-for="post in posts" :key="post.id" :post="post" />
+          </transition-group>
+        </q-list>
+        <q-item v-if="loading" class="row justify-center q-py-xl">
+          <q-spinner color="primary" size="2em" />
+        </q-item>
+      </div>
     </q-scroll-area>
   </q-page>
 </template>
 
 <script>
-import app from "src/boot/firebase";
-import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { defineComponent } from "vue";
-import { formatDistance } from "date-fns";
 import PostItem from "../components/PostItem.vue";
-const auth = getAuth(app);
+import LoadErrorComponent from "../components/LoadErrorComponent.vue";
+import { getBestPosts, getWorstPosts } from "../services/archive";
 
 export default defineComponent({
   name: "RankingPage",
-  data() {
-    return {
-      user: null,
-      posts: [],
-      show_best: true,
-      postsDisplayAmount: 10,
-    };
-  },
   components: {
+    LoadErrorComponent,
     PostItem,
   },
-  beforeRouteEnter(to, from, next) {
-    next((vm) => {
-      vm.showPostsDependingOnState();
-    });
+  data() {
+    return {
+      posts: [],
+      show_best: true,
+      loading: true,
+      loadError: "",
+    };
   },
-  mounted() {
-    this.showPostsDependingOnState();
-    onAuthStateChanged(auth, (user) => {
-      this.user = user;
-    });
+  async created() {
+    await this.loadBestPosts();
   },
   methods: {
-    formatRelativeDate(value) {
-      return formatDistance(value, Date.now());
-    },
-    fetchPosts(n, best) {
-      let url = best ? `/posts/best/` : `/posts/worst/`;
-      this.$api
-        .get(url + `?n=${n}`)
-        .then(async (response) => {
-          if (Array.isArray(response.data)) {
-            response.data.sort((a, b) => b.score - a.score);
-            this.posts = response.data;
-          }
-        })
-        .catch((error) => {
-          //console.error("Error fetching posts",error);
-        });
-    },
-    showPostsDependingOnState() {
-      if (this.show_best) {
-        this.showBestPosts();
-      } else {
-        this.showWorstPosts();
-      }
-    },
-    showBestPosts() {
+    async loadBestPosts() {
       this.show_best = true;
-      this.fetchPosts(this.postsDisplayAmount, true);
+      await this.loadPosts(getBestPosts);
     },
-    showWorstPosts() {
+    async loadWorstPosts() {
       this.show_best = false;
-      this.fetchPosts(this.postsDisplayAmount, false);
+      await this.loadPosts(getWorstPosts);
     },
-    fetchPostsDelegated() {
-      this.showPostsDependingOnState();
+    async loadPosts(loader) {
+      this.loading = true;
+      this.loadError = "";
+
+      try {
+        this.posts = await loader();
+      } catch (error) {
+        console.error(error);
+        this.loadError = "Unable to load archive rankings.";
+      } finally {
+        this.loading = false;
+      }
     },
   },
 });

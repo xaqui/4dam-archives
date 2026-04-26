@@ -1,7 +1,6 @@
 <template>
   <q-avatar v-if="displayImage" size="xl">
-    <img v-if="imageUrl" :src="imageUrl" alt="User Avatar" />
-    <img v-else src="/img/unknown-avatar.png" alt="User Avatar" />
+    <img :src="resolvedImageUrl" alt="User Avatar" @error="useFallbackImage" />
   </q-avatar>
   <q-avatar v-else size="xl">
     <div class="icon-container">
@@ -32,6 +31,7 @@
 .body--dark #anon-icon {
   color: $grey-2;
 }
+
 .body--light #anon-icon {
   color: $grey-9;
 }
@@ -44,12 +44,15 @@
 .body--light #anon-bg {
   fill: $grey-2;
 }
+
 .body--dark #anon-bg {
   fill: $grey-9;
 }
 </style>
 
 <script>
+const FALLBACK_AVATAR = "/img/unknown-avatar.png";
+
 export default {
   props: {
     displayImage: {
@@ -58,7 +61,30 @@ export default {
     },
     imageUrl: {
       type: String,
-      default: "/img/unknown-avatar.png",
+      default: FALLBACK_AVATAR,
+    },
+  },
+  data() {
+    return {
+      currentImageUrl: this.imageUrl || FALLBACK_AVATAR,
+    };
+  },
+  computed: {
+    resolvedImageUrl() {
+      return this.currentImageUrl || FALLBACK_AVATAR;
+    },
+  },
+  watch: {
+    imageUrl: {
+      immediate: true,
+      handler(value) {
+        this.currentImageUrl = value || FALLBACK_AVATAR;
+      },
+    },
+  },
+  methods: {
+    useFallbackImage() {
+      this.currentImageUrl = FALLBACK_AVATAR;
     },
   },
 };

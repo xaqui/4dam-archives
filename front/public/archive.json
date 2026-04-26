@@ -1,0 +1,1588 @@
+{
+  "meta": {
+    "generatedAt": "2026-04-26T10:18:30.905Z",
+    "sourceDumpCount": 18,
+    "sourceDumps": [
+      "dump-4dam-20240129-1210.sql",
+      "dump-4dam-20240129-1211.sql",
+      "dump-4dam-20240129-1212.sql",
+      "dump-4dam-20240129-1213.sql",
+      "dump-4dam-20240304-2359.sql",
+      "dump-4dam-20240305-2359.sql",
+      "dump-4dam-20240306-2359.sql",
+      "dump-4dam-20240307-2359.sql",
+      "dump-4dam-20240308-2359.sql",
+      "dump-4dam-20240309-2359.sql",
+      "dump-4dam-20240310-2359.sql",
+      "dump-4dam-20240311-2359.sql",
+      "dump-4dam-20240312-2359.sql",
+      "dump-4dam-20240313-2359.sql",
+      "dump-4dam-20240314-2359.sql",
+      "dump-4dam-20240315-2359.sql",
+      "dump-4dam-20240316-2359.sql",
+      "dump-4dam-20240317-2359.sql"
+    ],
+    "archivePolicy": {
+      "posts": "last_seen",
+      "votes": "final_score",
+      "deletedPosts": "preserved",
+      "authorIdentity": "historical_snapshot_best_effort"
+    },
+    "counts": {
+      "posts": 108,
+      "users": 8
+    }
+  },
+  "users": [
+    {
+      "uid": "NI4YHwGE3ZXVF041TgXs8CFBCcj1",
+      "displayName": "Alejandro Blanco Villar",
+      "nick": "Alex'int",
+      "avatar": "https://pbs.twimg.com/media/FraoVbnX0AABMv4.jpg"
+    },
+    {
+      "uid": "KGwqP2AoV3bmN5ISAjJ7AFDgfJ62",
+      "displayName": "Joaquín Barreiro García",
+      "nick": "bleisiken",
+      "avatar": "https://64.media.tumblr.com/1ab4e58f63fc5eefd57b1d016e2bcc0f/34767a20142b0c35-b5/s400x600/e4d27a7a38f12582ad3a9edd3477eeb96cce6de6.png"
+    },
+    {
+      "uid": "i5iSDJ7UOnOPTYKPk6LpeKhDatA3",
+      "displayName": "Gabriel Pazos",
+      "nick": "el_cachimbas",
+      "avatar": "https://img2.rtve.es/i/?w=1600&i=1630933989116.jpg"
+    },
+    {
+      "uid": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+      "displayName": "Eloy García",
+      "nick": "eloy soluciones",
+      "avatar": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/383.png"
+    },
+    {
+      "uid": "603Mq69ZrPTHm6vo5zg1rubFLa92",
+      "displayName": "Rafael Costas",
+      "nick": "Lo Paco",
+      "avatar": "https://qph.cf2.quoracdn.net/main-qimg-fd6a91badf55d2b9abbcad7f16d161d0-lq"
+    },
+    {
+      "uid": "dBG3vIYtxlS9jINUO4DAvGuhXLD3",
+      "displayName": "Yoel Rey",
+      "nick": "putas SA",
+      "avatar": "https://tn.com.ar/resizer/qS_m4XYM3Jnez5jetBTGxQoY6N0=/767x0/smart/filters:format(webp)/cloudfront-us-east-1.images.arcpublishing.com/artear/2PCP53TADQMWKI3GA7GPJG76NY.jpg"
+    },
+    {
+      "uid": "XcdkFt8TgSg794ZQX82WlpaStmn1",
+      "displayName": "Pablo Fernández Recamán",
+      "nick": "Reca",
+      "avatar": "https://miro.medium.com/v2/resize:fit:800/1*75fs55VwnrDZ_ET75HP3pw.png"
+    },
+    {
+      "uid": "2ou5OUfBoPS9BWfUXIoo8hA0ag42",
+      "displayName": "Javier González Giménez",
+      "nick": "RogelioButifarra",
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpESQEggSsGBjRNfaWp60rF1VuVmiftg5H0w&usqp=CAU"
+    }
+  ],
+  "posts": [
+    {
+      "id": "c6b43775-d650-11ee-b734-0242ac130002",
+      "date": 1709135293588,
+      "content": "antes de los examenes vs despues de los examenes una siesta y beber agua",
+      "media_url": "https://steamuserimages-a.akamaihd.net/ugc/918041263410036875/6EEEE804AE57F93E77F4B669D87176C91E7B93BF/?imw=1024&imh=667&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+      "owner": "KGwqP2AoV3bmN5ISAjJ7AFDgfJ62",
+      "show_name": false,
+      "points": 1,
+      "author_snapshot": null
+    },
+    {
+      "id": "a6f6d36a-d480-11ee-b734-0242ac130002",
+      "date": 1708935951683,
+      "content": "pedro be like, bueno le echais un vistazo vosotros",
+      "media_url": "https://i.imgflip.com/28xnqg.jpg?a474240",
+      "owner": "KGwqP2AoV3bmN5ISAjJ7AFDgfJ62",
+      "show_name": true,
+      "points": 1,
+      "author_snapshot": {
+        "uid": "KGwqP2AoV3bmN5ISAjJ7AFDgfJ62",
+        "displayName": "Joaquín Barreiro García",
+        "nick": "bleisiken",
+        "avatar": "https://64.media.tumblr.com/1ab4e58f63fc5eefd57b1d016e2bcc0f/34767a20142b0c35-b5/s400x600/e4d27a7a38f12582ad3a9edd3477eeb96cce6de6.png"
+      }
+    },
+    {
+      "id": "4c4a1ee2-d163-11ee-b734-0242ac130002",
+      "date": 1708593491591,
+      "content": "DESARROLLO DE COGOLLOS",
+      "media_url": "https://cdn.discordapp.com/attachments/1200347208223047762/1210153488475103232/OIG2.jpg?ex=65e98643&is=65d71143&hm=69ccf1b0b2c9dfe57ce09530df44036a2a9c0d43df471a174cf5f39d15d58bdc&",
+      "owner": "KGwqP2AoV3bmN5ISAjJ7AFDgfJ62",
+      "show_name": true,
+      "points": 1,
+      "author_snapshot": {
+        "uid": "KGwqP2AoV3bmN5ISAjJ7AFDgfJ62",
+        "displayName": "Joaquín Barreiro García",
+        "nick": "bleisiken",
+        "avatar": "https://64.media.tumblr.com/1ab4e58f63fc5eefd57b1d016e2bcc0f/34767a20142b0c35-b5/s400x600/e4d27a7a38f12582ad3a9edd3477eeb96cce6de6.png"
+      }
+    },
+    {
+      "id": "75e3e46d-d08d-11ee-b734-0242ac130002",
+      "date": 1708501648874,
+      "content": "chikitin estoy mal herido",
+      "media_url": null,
+      "owner": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+      "show_name": true,
+      "points": 2,
+      "author_snapshot": {
+        "uid": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+        "displayName": "Eloy García",
+        "nick": "eloy solucines",
+        "avatar": "https://img.pokemondb.net/sprites/brilliant-diamond-shining-pearl/normal/groudon.png"
+      }
+    },
+    {
+      "id": "69779ccf-d08d-11ee-b734-0242ac130002",
+      "date": 1708501628002,
+      "content": "eyy chickitin",
+      "media_url": null,
+      "owner": null,
+      "show_name": false,
+      "points": 0,
+      "author_snapshot": null
+    },
+    {
+      "id": "a21e3c00-c73f-11ee-a169-0242ac130002",
+      "date": 1707478660789,
+      "content": "mi gato",
+      "media_url": "https://cdn.discordapp.com/attachments/1089923966694609019/1205477391112212600/83d2971d-a6a2-4194-8dc7-95d73771f5e4.png?ex=65d8834e&is=65c60e4e&hm=db4a5883c303bbdf7f727aaecff5ef9b777fb9a135393dc84a3a17da5f58bbef&",
+      "owner": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+      "show_name": true,
+      "points": 3,
+      "author_snapshot": {
+        "uid": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+        "displayName": "Eloy García",
+        "nick": "eloy solucines",
+        "avatar": "https://img.pokemondb.net/sprites/brilliant-diamond-shining-pearl/normal/groudon.png"
+      }
+    },
+    {
+      "id": "16b16551-c73e-11ee-a169-0242ac130002",
+      "date": 1707477999014,
+      "content": "Bienvenido a  a segundo de DAM del CEBEM:",
+      "media_url": "https://pm1.aminoapps.com/7298/a270c687d5294836242482253e935e823b98b1a1r1-300-332v2_uhq.jpg",
+      "owner": null,
+      "show_name": false,
+      "points": 2,
+      "author_snapshot": null
+    },
+    {
+      "id": "b45edbab-c73b-11ee-a169-0242ac130002",
+      "date": 1707476973402,
+      "content": "sex",
+      "media_url": null,
+      "owner": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+      "show_name": true,
+      "points": 1,
+      "author_snapshot": {
+        "uid": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+        "displayName": "Eloy García",
+        "nick": "eloy solucines",
+        "avatar": "https://img.pokemondb.net/sprites/brilliant-diamond-shining-pearl/normal/groudon.png"
+      }
+    },
+    {
+      "id": "cbf54784-c726-11ee-a169-0242ac130002",
+      "date": 1707468004002,
+      "content": "El yowy si saliera por la guardia con el antonio",
+      "media_url": "https://cope-cdnmed.cope.es/resources/jpg/4/2/1600465030824.jpg",
+      "owner": "dBG3vIYtxlS9jINUO4DAvGuhXLD3",
+      "show_name": true,
+      "points": 4,
+      "author_snapshot": {
+        "uid": "dBG3vIYtxlS9jINUO4DAvGuhXLD3",
+        "displayName": "Yoel Rey",
+        "nick": "putas SA",
+        "avatar": "https://tn.com.ar/resizer/qS_m4XYM3Jnez5jetBTGxQoY6N0=/767x0/smart/filters:format(webp)/cloudfront-us-east-1.images.arcpublishing.com/artear/2PCP53TADQMWKI3GA7GPJG76NY.jpg"
+      }
+    },
+    {
+      "id": "8ea79bcb-c664-11ee-a169-0242ac130002",
+      "date": 1707384569904,
+      "content": "josuke higashigata",
+      "media_url": "https://cdn.discordapp.com/attachments/1200347208223047762/1205082822906220584/Sin_titulo.jpg?ex=65d713d6&is=65c49ed6&hm=108146d0b72b66225b142eeff065860f7c498a2dfd557d4b9a65cf791ad84ea3&",
+      "owner": "KGwqP2AoV3bmN5ISAjJ7AFDgfJ62",
+      "show_name": true,
+      "points": 2,
+      "author_snapshot": {
+        "uid": "KGwqP2AoV3bmN5ISAjJ7AFDgfJ62",
+        "displayName": "Joaquín Barreiro García",
+        "nick": "bleisiken",
+        "avatar": "https://64.media.tumblr.com/1ab4e58f63fc5eefd57b1d016e2bcc0f/34767a20142b0c35-b5/s400x600/e4d27a7a38f12582ad3a9edd3477eeb96cce6de6.png"
+      }
+    },
+    {
+      "id": "5b7f0cae-c664-11ee-a169-0242ac130002",
+      "date": 1707384484043,
+      "content": "eloy intentando leer algo en la pizarra",
+      "media_url": "https://cdn.discordapp.com/attachments/1200347208223047762/1205082533746835526/Sin_titulo-1.jpg?ex=65d71391&is=65c49e91&hm=149d9d4f5929850bc692a4eca27d1ae8373c45ddd40aeaf3ff5216293040bfee&",
+      "owner": "KGwqP2AoV3bmN5ISAjJ7AFDgfJ62",
+      "show_name": true,
+      "points": 1,
+      "author_snapshot": {
+        "uid": "KGwqP2AoV3bmN5ISAjJ7AFDgfJ62",
+        "displayName": "Joaquín Barreiro García",
+        "nick": "bleisiken",
+        "avatar": "https://64.media.tumblr.com/1ab4e58f63fc5eefd57b1d016e2bcc0f/34767a20142b0c35-b5/s400x600/e4d27a7a38f12582ad3a9edd3477eeb96cce6de6.png"
+      }
+    },
+    {
+      "id": "a9d3ecb8-c663-11ee-a169-0242ac130002",
+      "date": 1707384184377,
+      "content": "antonio butanero",
+      "media_url": "https://cdn.discordapp.com/attachments/1200347208223047762/1205081160665796688/Sin_titulo.jpg?ex=65d7124a&is=65c49d4a&hm=9ddb7a2e586b96ef379f96089499d7cdef2ee49b2bc670c2f77b17f4c6360cd4&",
+      "owner": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+      "show_name": true,
+      "points": 2,
+      "author_snapshot": {
+        "uid": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+        "displayName": "Eloy García",
+        "nick": "eloy solucines",
+        "avatar": "https://img.pokemondb.net/sprites/brilliant-diamond-shining-pearl/normal/groudon.png"
+      }
+    },
+    {
+      "id": "2631910c-c663-11ee-a169-0242ac130002",
+      "date": 1707383963506,
+      "content": "eladio cabron",
+      "media_url": null,
+      "owner": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+      "show_name": true,
+      "points": 1,
+      "author_snapshot": {
+        "uid": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+        "displayName": "Eloy García",
+        "nick": "eloy solucines",
+        "avatar": "https://img.pokemondb.net/sprites/brilliant-diamond-shining-pearl/normal/groudon.png"
+      }
+    },
+    {
+      "id": "74686e84-c5b6-11ee-a169-0242ac130002",
+      "date": 1707309792797,
+      "content": "Pedro felicitándome por aprobar interfaces. Yo intentando recordar si hemos dado algo en sus clases",
+      "media_url": "https://i.kym-cdn.com/photos/images/original/002/007/259/708.jpg",
+      "owner": null,
+      "show_name": false,
+      "points": 4,
+      "author_snapshot": null
+    },
+    {
+      "id": "dc185e37-c5a4-11ee-a169-0242ac130002",
+      "date": 1707302234539,
+      "content": "pika para mi hexaxaqui",
+      "media_url": "https://p16-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/o42Ro87ffAEGMhLgDOaQA7FI2OfXQ741W5aMe9~tplv-photomode-zoomcover:720:720.jpeg?x-expires=1707361200&x-signature=Quzv7HV%2BSBDN1AF%2BJbfGqCuXG44%3D",
+      "owner": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+      "show_name": true,
+      "points": 1,
+      "author_snapshot": {
+        "uid": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+        "displayName": "Eloy García",
+        "nick": "eloy solucines",
+        "avatar": "https://img.pokemondb.net/sprites/brilliant-diamond-shining-pearl/normal/groudon.png"
+      }
+    },
+    {
+      "id": "f8ce537d-c5a3-11ee-a169-0242ac130002",
+      "date": 1707301853189,
+      "content": "hayaguasca con grelos",
+      "media_url": null,
+      "owner": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+      "show_name": true,
+      "points": 2,
+      "author_snapshot": {
+        "uid": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+        "displayName": "Eloy García",
+        "nick": "eloy solucines",
+        "avatar": "https://img.pokemondb.net/sprites/brilliant-diamond-shining-pearl/normal/groudon.png"
+      }
+    },
+    {
+      "id": "4060e339-c59f-11ee-a169-0242ac130002",
+      "date": 1707299825678,
+      "content": "que pasa si nos vamos a bailar : banda sonora pekin",
+      "media_url": null,
+      "owner": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+      "show_name": true,
+      "points": 2,
+      "author_snapshot": {
+        "uid": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+        "displayName": "Eloy García",
+        "nick": "eloy solucines",
+        "avatar": "https://img.pokemondb.net/sprites/brilliant-diamond-shining-pearl/normal/groudon.png"
+      }
+    },
+    {
+      "id": "afb4b93f-c59a-11ee-a169-0242ac130002",
+      "date": 1707297863411,
+      "content": "samon samon",
+      "media_url": "https://cdn.discordapp.com/attachments/762403051934973992/1204498442093592606/image.png",
+      "owner": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+      "show_name": true,
+      "points": 3,
+      "author_snapshot": {
+        "uid": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+        "displayName": "Eloy García",
+        "nick": "eloy solucines",
+        "avatar": "https://img.pokemondb.net/sprites/brilliant-diamond-shining-pearl/normal/groudon.png"
+      }
+    },
+    {
+      "id": "54cda773-c520-11ee-b5d2-0242ac130002",
+      "date": 1707245315032,
+      "content": "lo siento, nunca podré ser él",
+      "media_url": "https://cdn.discordapp.com/attachments/762403051934973992/1204498442093592606/image.png",
+      "owner": "KGwqP2AoV3bmN5ISAjJ7AFDgfJ62",
+      "show_name": false,
+      "points": 3,
+      "author_snapshot": null
+    },
+    {
+      "id": "5df9922b-c4e8-11ee-b5d2-0242ac130002",
+      "date": 1707221278247,
+      "content": "https://bastaonline.net/g/CWSAHVVAVQ",
+      "media_url": null,
+      "owner": "2ou5OUfBoPS9BWfUXIoo8hA0ag42",
+      "show_name": true,
+      "points": 0,
+      "author_snapshot": {
+        "uid": "2ou5OUfBoPS9BWfUXIoo8hA0ag42",
+        "displayName": "Javier González Giménez",
+        "nick": "RogelioButifarra",
+        "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpESQEggSsGBjRNfaWp60rF1VuVmiftg5H0w&usqp=CAU"
+      }
+    },
+    {
+      "id": "3e1d3d92-c4e8-11ee-b5d2-0242ac130002",
+      "date": 1707221225783,
+      "content": "",
+      "media_url": "https://media.discordapp.net/attachments/1200347208223047762/1204397775148687381/makeitmeme_P1q3R.jpeg?ex=65d495d6&is=65c220d6&hm=a09419a1d6ac6a9bc3e9517c08238a4d3df122fad604944d6433b668782476ca&=&format=webp&width=985&height=663",
+      "owner": "KGwqP2AoV3bmN5ISAjJ7AFDgfJ62",
+      "show_name": true,
+      "points": 0,
+      "author_snapshot": {
+        "uid": "KGwqP2AoV3bmN5ISAjJ7AFDgfJ62",
+        "displayName": "Joaquín Barreiro García",
+        "nick": "bleisiken",
+        "avatar": "https://64.media.tumblr.com/1ab4e58f63fc5eefd57b1d016e2bcc0f/34767a20142b0c35-b5/s400x600/e4d27a7a38f12582ad3a9edd3477eeb96cce6de6.png"
+      }
+    },
+    {
+      "id": "41ddec00-c4e5-11ee-b5d2-0242ac130002",
+      "date": 1707219942584,
+      "content": "https://makeitmeme.com/join/EBNAF",
+      "media_url": null,
+      "owner": "2ou5OUfBoPS9BWfUXIoo8hA0ag42",
+      "show_name": true,
+      "points": 0,
+      "author_snapshot": {
+        "uid": "2ou5OUfBoPS9BWfUXIoo8hA0ag42",
+        "displayName": "Javier González Giménez",
+        "nick": "RogelioButifarra",
+        "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpESQEggSsGBjRNfaWp60rF1VuVmiftg5H0w&usqp=CAU"
+      }
+    },
+    {
+      "id": "446ca23c-c4de-11ee-b5d2-0242ac130002",
+      "date": 1707216940905,
+      "content": "sex",
+      "media_url": null,
+      "owner": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+      "show_name": true,
+      "points": 0,
+      "author_snapshot": {
+        "uid": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+        "displayName": "Eloy García",
+        "nick": "eloy solucines",
+        "avatar": "https://img.pokemondb.net/sprites/brilliant-diamond-shining-pearl/normal/groudon.png"
+      }
+    },
+    {
+      "id": "ec3c69ee-c4cf-11ee-b5d2-0242ac130002",
+      "date": 1707210780524,
+      "content": "si",
+      "media_url": "https://media.discordapp.net/attachments/1200347208223047762/1204353834865000468/Sin_titulo.jpg?ex=65d46cea&is=65c1f7ea&hm=1950aceddb3ded9879720e6c397f612e2af86b5115c21df6987ca1ecacb90cf7&=&format=webp&width=651&height=663",
+      "owner": "KGwqP2AoV3bmN5ISAjJ7AFDgfJ62",
+      "show_name": true,
+      "points": 1,
+      "author_snapshot": {
+        "uid": "KGwqP2AoV3bmN5ISAjJ7AFDgfJ62",
+        "displayName": "Joaquín Barreiro García",
+        "nick": "bleisiken",
+        "avatar": "https://64.media.tumblr.com/1ab4e58f63fc5eefd57b1d016e2bcc0f/34767a20142b0c35-b5/s400x600/e4d27a7a38f12582ad3a9edd3477eeb96cce6de6.png"
+      }
+    },
+    {
+      "id": "ed0b5e42-c440-11ee-b5d2-0242ac130002",
+      "date": 1707149362354,
+      "content": "Foto de Isabel estudiando química",
+      "media_url": "https://i.pinimg.com/originals/74/83/fd/7483fd11683458eb13f2d32a2f2aca38.jpg",
+      "owner": null,
+      "show_name": false,
+      "points": 2,
+      "author_snapshot": null
+    },
+    {
+      "id": "e534392c-c406-11ee-b5d2-0242ac130002",
+      "date": 1707124438779,
+      "content": "el javi cuando pepe dice coger agua",
+      "media_url": "https://media.istockphoto.com/id/163922500/es/vector/loco-guy.jpg?s=612x612&w=0&k=20&c=T2SKF--4cmQDSS9sBs7Ql65nvupdvZ5bVUDdePMP4XU=",
+      "owner": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+      "show_name": true,
+      "points": 0,
+      "author_snapshot": {
+        "uid": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+        "displayName": "Eloy García",
+        "nick": "eloy solucines",
+        "avatar": "https://img.pokemondb.net/sprites/brilliant-diamond-shining-pearl/normal/groudon.png"
+      }
+    },
+    {
+      "id": "797305df-c403-11ee-b5d2-0242ac130002",
+      "date": 1707122969511,
+      "content": "todos en cualquier clase del lunes",
+      "media_url": "https://i.pinimg.com/originals/4d/19/0f/4d190f1307b35e7155bb4b898e19d545.jpg",
+      "owner": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+      "show_name": true,
+      "points": 2,
+      "author_snapshot": {
+        "uid": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+        "displayName": "Eloy García",
+        "nick": "eloy solucines",
+        "avatar": "https://img.pokemondb.net/sprites/brilliant-diamond-shining-pearl/normal/groudon.png"
+      }
+    },
+    {
+      "id": "8e78e207-c3fe-11ee-b5d2-0242ac130002",
+      "date": 1707120858467,
+      "content": "Yo cuando pedro pone un video el lunes a las 9",
+      "media_url": "https://i.pinimg.com/originals/4d/19/0f/4d190f1307b35e7155bb4b898e19d545.jpg",
+      "owner": "KGwqP2AoV3bmN5ISAjJ7AFDgfJ62",
+      "show_name": true,
+      "points": 3,
+      "author_snapshot": {
+        "uid": "KGwqP2AoV3bmN5ISAjJ7AFDgfJ62",
+        "displayName": "Joaquín Barreiro García",
+        "nick": "bleisiken",
+        "avatar": "https://64.media.tumblr.com/1ab4e58f63fc5eefd57b1d016e2bcc0f/34767a20142b0c35-b5/s400x600/e4d27a7a38f12582ad3a9edd3477eeb96cce6de6.png"
+      }
+    },
+    {
+      "id": "57de2aac-c1b9-11ee-b5d2-0242ac130002",
+      "date": 1706871229315,
+      "content": "soy el de abajo solo que de doctor uso api",
+      "media_url": null,
+      "owner": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+      "show_name": true,
+      "points": 1,
+      "author_snapshot": {
+        "uid": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+        "displayName": "Eloy García",
+        "nick": "eloy solucines",
+        "avatar": "https://img.pokemondb.net/sprites/brilliant-diamond-shining-pearl/normal/groudon.png"
+      }
+    },
+    {
+      "id": "d2ca056e-c1b7-11ee-b5d2-0242ac130002",
+      "date": 1706870577497,
+      "content": "soy fullstack",
+      "media_url": "https://preview.redd.it/hdw0ms99k0gc1.jpeg?width=640&crop=smart&auto=webp&s=68ff64373854204c2442946fbf6d467e3f851bb2",
+      "owner": "i5iSDJ7UOnOPTYKPk6LpeKhDatA3",
+      "show_name": true,
+      "points": 1,
+      "author_snapshot": {
+        "uid": "i5iSDJ7UOnOPTYKPk6LpeKhDatA3",
+        "displayName": "Gabriel Pazos",
+        "nick": "el_cachimbas",
+        "avatar": "https://img2.rtve.es/i/?w=1600&i=1630933989116.jpg"
+      }
+    },
+    {
+      "id": "de6bb6c5-c1b0-11ee-b5d2-0242ac130002",
+      "date": 1706867591065,
+      "content": "el lapo de pepe",
+      "media_url": "https://c8.alamy.com/compes/rgg9rn/caracter-de-moco-moco-verde-como-un-concepto-como-una-nariz-con-mucosidad-en-forma-liquida-como-un-monstruo-contagiosa-con-un-signo-en-blanco-como-simbolo-de-una-enfermedad-medica-rgg9rn.jpg",
+      "owner": "i5iSDJ7UOnOPTYKPk6LpeKhDatA3",
+      "show_name": true,
+      "points": 2,
+      "author_snapshot": {
+        "uid": "i5iSDJ7UOnOPTYKPk6LpeKhDatA3",
+        "displayName": "Gabriel Pazos",
+        "nick": "el_cachimbas",
+        "avatar": "https://img2.rtve.es/i/?w=1600&i=1630933989116.jpg"
+      }
+    },
+    {
+      "id": "536d4385-c0f1-11ee-855a-0242ac170002",
+      "date": 1706785323018,
+      "content": "pepe:",
+      "media_url": "https://i.kym-cdn.com/entries/icons/original/000/024/091/screamingcowboylol.jpg",
+      "owner": "KGwqP2AoV3bmN5ISAjJ7AFDgfJ62",
+      "show_name": true,
+      "points": 1,
+      "author_snapshot": {
+        "uid": "KGwqP2AoV3bmN5ISAjJ7AFDgfJ62",
+        "displayName": "Joaquín Barreiro García",
+        "nick": "bleisiken",
+        "avatar": "https://64.media.tumblr.com/1ab4e58f63fc5eefd57b1d016e2bcc0f/34767a20142b0c35-b5/s400x600/e4d27a7a38f12582ad3a9edd3477eeb96cce6de6.png"
+      }
+    },
+    {
+      "id": "e3624d9d-c0ee-11ee-855a-0242ac170002",
+      "date": 1706784274231,
+      "content": "pepe poniendo la música de su epoca",
+      "media_url": "https://i.ibb.co/1MmKyH6/Screenshot-2024-02-01-at-11-36-57.png",
+      "owner": "XcdkFt8TgSg794ZQX82WlpaStmn1",
+      "show_name": false,
+      "points": 0,
+      "author_snapshot": null
+    },
+    {
+      "id": "d3a166d0-c0ee-11ee-855a-0242ac170002",
+      "date": 1706784249543,
+      "content": "",
+      "media_url": "https://preview.redd.it/v0iqf8b8xtfc1.jpeg?width=640&crop=smart&auto=webp&s=a0b07e6851fc378b5ffefcf92a1a7ff2bdfa33a2",
+      "owner": "i5iSDJ7UOnOPTYKPk6LpeKhDatA3",
+      "show_name": true,
+      "points": 0,
+      "author_snapshot": {
+        "uid": "i5iSDJ7UOnOPTYKPk6LpeKhDatA3",
+        "displayName": "Gabriel Pazos",
+        "nick": "el_cachimbas",
+        "avatar": "https://img2.rtve.es/i/?w=1600&i=1630933989116.jpg"
+      }
+    },
+    {
+      "id": "e775e1d9-c0dd-11ee-855a-0242ac170002",
+      "date": 1706776979818,
+      "content": "xaqui si terminara la uni y si no superara la depresion",
+      "media_url": "https://steamuserimages-a.akamaihd.net/ugc/2339125443336726572/702C8D0A8CF365B794DE3AF86764CDBCEC13E88D/",
+      "owner": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+      "show_name": true,
+      "points": 2,
+      "author_snapshot": {
+        "uid": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+        "displayName": "Eloy García",
+        "nick": "eloy solucines",
+        "avatar": "https://img.pokemondb.net/sprites/brilliant-diamond-shining-pearl/normal/groudon.png"
+      }
+    },
+    {
+      "id": "b4ba0957-c0da-11ee-855a-0242ac170002",
+      "date": 1706775606198,
+      "content": "shadow goberment , spell cast",
+      "media_url": "https://www.youtube.com/watch?v=oseM5Zxgg78&list=LL&index=2",
+      "owner": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+      "show_name": true,
+      "points": 1,
+      "author_snapshot": {
+        "uid": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+        "displayName": "Eloy García",
+        "nick": "eloy solucines",
+        "avatar": "https://img.pokemondb.net/sprites/brilliant-diamond-shining-pearl/normal/groudon.png"
+      }
+    },
+    {
+      "id": "689202ea-c0d9-11ee-855a-0242ac170002",
+      "date": 1706775048830,
+      "content": "El coche de Eloy:",
+      "media_url": "https://gifdb.com/images/high/gta5-driving-invisible-car-veia2fgjx23xk8x1.gif",
+      "owner": "2ou5OUfBoPS9BWfUXIoo8hA0ag42",
+      "show_name": true,
+      "points": 1,
+      "author_snapshot": {
+        "uid": "2ou5OUfBoPS9BWfUXIoo8hA0ag42",
+        "displayName": "Javier González Giménez",
+        "nick": "RogelioButifarra",
+        "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpESQEggSsGBjRNfaWp60rF1VuVmiftg5H0w&usqp=CAU"
+      }
+    },
+    {
+      "id": "8ae324df-c06c-11ee-855a-0242ac170002",
+      "date": 1706728287814,
+      "content": "HUMANE AI VS RABBIT R1",
+      "media_url": "https://64.media.tumblr.com/0a423156c49bacfac29470f4e755ed30/20b62d1a21317d14-45/s540x810/2fbbee7e2b66dba122831383a1eca0cb351ec684.gif",
+      "owner": "603Mq69ZrPTHm6vo5zg1rubFLa92",
+      "show_name": true,
+      "points": 3,
+      "author_snapshot": {
+        "uid": "603Mq69ZrPTHm6vo5zg1rubFLa92",
+        "displayName": "Rafael Costas",
+        "nick": "Lo Paco",
+        "avatar": "https://qph.cf2.quoracdn.net/main-qimg-fd6a91badf55d2b9abbcad7f16d161d0-lq"
+      }
+    },
+    {
+      "id": "77ad0761-c033-11ee-855a-0242ac170002",
+      "date": 1706703778735,
+      "content": "I'm biden and I'm dry",
+      "media_url": "https://media.wired.com/photos/650b7e93fbbd4ad88d9ff486/4:3/w_2132,h_1599,c_limit/The-Dumb-Alien-Mummy-Story-Takes-a-Shocking-Twist-Security-GettyImages-1663866447.jpg",
+      "owner": "KGwqP2AoV3bmN5ISAjJ7AFDgfJ62",
+      "show_name": true,
+      "points": 1,
+      "author_snapshot": {
+        "uid": "KGwqP2AoV3bmN5ISAjJ7AFDgfJ62",
+        "displayName": "Joaquín Barreiro García",
+        "nick": "bleisiken",
+        "avatar": "https://64.media.tumblr.com/1ab4e58f63fc5eefd57b1d016e2bcc0f/34767a20142b0c35-b5/s400x600/e4d27a7a38f12582ad3a9edd3477eeb96cce6de6.png"
+      }
+    },
+    {
+      "id": "42391c11-c02c-11ee-855a-0242ac170002",
+      "date": 1706700682783,
+      "content": "el CEO eligiendo las perks de sus empleados",
+      "media_url": "https://www.failuretolerated.com/_images/Nilvein-Character-Sheet-example.jpg",
+      "owner": "KGwqP2AoV3bmN5ISAjJ7AFDgfJ62",
+      "show_name": true,
+      "points": 4,
+      "author_snapshot": {
+        "uid": "KGwqP2AoV3bmN5ISAjJ7AFDgfJ62",
+        "displayName": "Joaquín Barreiro García",
+        "nick": "bleisiken",
+        "avatar": "https://64.media.tumblr.com/1ab4e58f63fc5eefd57b1d016e2bcc0f/34767a20142b0c35-b5/s400x600/e4d27a7a38f12582ad3a9edd3477eeb96cce6de6.png"
+      }
+    },
+    {
+      "id": "dc7c486e-c02b-11ee-855a-0242ac170002",
+      "date": 1706700511282,
+      "content": "nno es Lo MIsMo lLaMarTe MOHAMED que JoRge",
+      "media_url": "https://i.pinimg.com/736x/5f/43/c3/5f43c3beec8c0d21ae7a344d2e368684.jpg",
+      "owner": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+      "show_name": true,
+      "points": 1,
+      "author_snapshot": {
+        "uid": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+        "displayName": "Eloy García",
+        "nick": "eloy solucines",
+        "avatar": "https://img.pokemondb.net/sprites/brilliant-diamond-shining-pearl/normal/groudon.png"
+      }
+    },
+    {
+      "id": "94ee5830-c02b-11ee-855a-0242ac170002",
+      "date": 1706700391209,
+      "content": "DAM DIM DOM DUM ?!??!?!?",
+      "media_url": "https://i.pinimg.com/736x/5f/43/c3/5f43c3beec8c0d21ae7a344d2e368684.jpg",
+      "owner": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+      "show_name": true,
+      "points": 1,
+      "author_snapshot": {
+        "uid": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+        "displayName": "Eloy García",
+        "nick": "eloy solucines",
+        "avatar": "https://img.pokemondb.net/sprites/brilliant-diamond-shining-pearl/normal/groudon.png"
+      }
+    },
+    {
+      "id": "291c1ca5-c015-11ee-855a-0242ac170002",
+      "date": 1706690761051,
+      "content": "📝Ya EstamosActivnWeed : 5elg 3x10 🍀nFalo: 13elg 2x22 🪨nTusi: 15elg 2x27🍓nKeta:20elg 2x36🧊nPila: 10xunidd 🪫nConsulten  Dely 🚲🚘🛵💸",
+      "media_url": null,
+      "owner": "2ou5OUfBoPS9BWfUXIoo8hA0ag42",
+      "show_name": true,
+      "points": 1,
+      "author_snapshot": {
+        "uid": "2ou5OUfBoPS9BWfUXIoo8hA0ag42",
+        "displayName": "Javier González Giménez",
+        "nick": "RogelioButifarra",
+        "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpESQEggSsGBjRNfaWp60rF1VuVmiftg5H0w&usqp=CAU"
+      }
+    },
+    {
+      "id": "7336786c-bf66-11ee-855a-0242ac170002",
+      "date": 1706615723500,
+      "content": "Pov: escuchas al Alexin sonarsenEl Alexin:",
+      "media_url": "https://i.blogs.es/d250c6/chainsaw-man/1366_2000.jpeg",
+      "owner": "2ou5OUfBoPS9BWfUXIoo8hA0ag42",
+      "show_name": true,
+      "points": 2,
+      "author_snapshot": {
+        "uid": "2ou5OUfBoPS9BWfUXIoo8hA0ag42",
+        "displayName": "Javier González Giménez",
+        "nick": "RogelioButifarra",
+        "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpESQEggSsGBjRNfaWp60rF1VuVmiftg5H0w&usqp=CAU"
+      }
+    },
+    {
+      "id": "bc95a48d-bf62-11ee-855a-0242ac170002",
+      "date": 1706614129533,
+      "content": "zoel???",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Quevedo_%28copia_de_Vel%C3%A1zquez%29.jpg",
+      "owner": "i5iSDJ7UOnOPTYKPk6LpeKhDatA3",
+      "show_name": true,
+      "points": 2,
+      "author_snapshot": {
+        "uid": "i5iSDJ7UOnOPTYKPk6LpeKhDatA3",
+        "displayName": "Gabriel Pazos",
+        "nick": "el_cachimbas",
+        "avatar": "https://img2.rtve.es/i/?w=1600&i=1630933989116.jpg"
+      }
+    },
+    {
+      "id": "9b402159-bf62-11ee-855a-0242ac170002",
+      "date": 1706614073021,
+      "content": "la maderea de rafa",
+      "media_url": "https://images.wikidexcdn.net/mwuploads/wikidex/d/d3/Hoothoot.png",
+      "owner": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+      "show_name": true,
+      "points": 1,
+      "author_snapshot": {
+        "uid": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+        "displayName": "Eloy García",
+        "nick": "eloy solucines",
+        "avatar": "https://img.pokemondb.net/sprites/brilliant-diamond-shining-pearl/normal/groudon.png"
+      }
+    },
+    {
+      "id": "f8420e44-bf55-11ee-855a-0242ac170002",
+      "date": 1706608645715,
+      "content": "Todos teniendo problemas con el wifinEl Jowi descargando juegos y nsfw en clase:",
+      "media_url": "https://i.blogs.es/fa3a7b/sukuna/500_333.jpeg",
+      "owner": null,
+      "show_name": false,
+      "points": 1,
+      "author_snapshot": null
+    },
+    {
+      "id": "108034ea-bf4e-11ee-855a-0242ac170002",
+      "date": 1706605250276,
+      "content": "Project ID: 7e9b0a2f-b744-4f2b-ad3d-b382ea8aacdf nPrivate Key: ********* **** **** **** ************",
+      "media_url": null,
+      "owner": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+      "show_name": true,
+      "points": 0,
+      "author_snapshot": {
+        "uid": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+        "displayName": "Eloy García",
+        "nick": "eloy solucines",
+        "avatar": "https://img.pokemondb.net/sprites/brilliant-diamond-shining-pearl/normal/groudon.png"
+      }
+    },
+    {
+      "id": "f661ab22-bf46-11ee-855a-0242ac170002",
+      "date": 1706602200765,
+      "content": "organigrama de mi empresa",
+      "media_url": "https://media.discordapp.net/attachments/1200347208223047762/1201801395473223710/EmpleadosCentralNuclear.webp?ex=65cb23c5&is=65b8aec5&hm=0548d6c3407735fa9c8d77653d9cf4f6a35d560f635b53b9c47a26177fb34e59&=&format=webp&width=300&height=427",
+      "owner": "KGwqP2AoV3bmN5ISAjJ7AFDgfJ62",
+      "show_name": true,
+      "points": 2,
+      "author_snapshot": {
+        "uid": "KGwqP2AoV3bmN5ISAjJ7AFDgfJ62",
+        "displayName": "Joaquín Barreiro García",
+        "nick": "bleisiken",
+        "avatar": "https://64.media.tumblr.com/1ab4e58f63fc5eefd57b1d016e2bcc0f/34767a20142b0c35-b5/s400x600/e4d27a7a38f12582ad3a9edd3477eeb96cce6de6.png"
+      }
+    },
+    {
+      "id": "f17d5cd3-bf46-11ee-855a-0242ac170002",
+      "date": 1706602191410,
+      "content": "Isabel viendo a Javi en su coche",
+      "media_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBUVOgkQpfm7BkVKY1WiIg6ugtvJNzoIXmD9ff_WLZ5vMCqcWt65ZOeN0pU5y0IPhVkFQ&usqp=CAU",
+      "owner": "2ou5OUfBoPS9BWfUXIoo8hA0ag42",
+      "show_name": true,
+      "points": 4,
+      "author_snapshot": {
+        "uid": "2ou5OUfBoPS9BWfUXIoo8hA0ag42",
+        "displayName": "Javier González Giménez",
+        "nick": "RogelioButifarra",
+        "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpESQEggSsGBjRNfaWp60rF1VuVmiftg5H0w&usqp=CAU"
+      }
+    },
+    {
+      "id": "d377e71d-bec9-11ee-855a-0242ac170002",
+      "date": 1706548454049,
+      "content": "Isabel con el Yowy",
+      "media_url": "https://www.autonocion.com/wp-content/uploads/2021/08/persecucion-policia-porsche.jpg",
+      "owner": "dBG3vIYtxlS9jINUO4DAvGuhXLD3",
+      "show_name": true,
+      "points": 1,
+      "author_snapshot": {
+        "uid": "dBG3vIYtxlS9jINUO4DAvGuhXLD3",
+        "displayName": "Yoel Rey",
+        "nick": "putas SA",
+        "avatar": "https://tn.com.ar/resizer/qS_m4XYM3Jnez5jetBTGxQoY6N0=/767x0/smart/filters:format(webp)/cloudfront-us-east-1.images.arcpublishing.com/artear/2PCP53TADQMWKI3GA7GPJG76NY.jpg"
+      }
+    },
+    {
+      "id": "1ff29ce6-bec6-11ee-855a-0242ac170002",
+      "date": 1706546864471,
+      "content": "isabel :",
+      "media_url": "https://i.imgur.com/JFZh8Z4.jpg",
+      "owner": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+      "show_name": true,
+      "points": 1,
+      "author_snapshot": {
+        "uid": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+        "displayName": "Eloy García",
+        "nick": "eloy solucines",
+        "avatar": "https://img.pokemondb.net/sprites/brilliant-diamond-shining-pearl/normal/groudon.png"
+      }
+    },
+    {
+      "id": "763297e0-bea8-11ee-855a-0242ac170002",
+      "date": 1706534123866,
+      "content": "si",
+      "media_url": "https://pbs.twimg.com/media/FUlIEWVXwAM93qq.jpg",
+      "owner": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+      "show_name": true,
+      "points": 3,
+      "author_snapshot": {
+        "uid": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+        "displayName": "Eloy García",
+        "nick": "eloy solucines",
+        "avatar": "https://img.pokemondb.net/sprites/brilliant-diamond-shining-pearl/normal/groudon.png"
+      }
+    },
+    {
+      "id": "1c983439-bea6-11ee-855a-0242ac170002",
+      "date": 1706533111996,
+      "content": "representacion fisica de la clase ahora mismo",
+      "media_url": "https://pm1.aminoapps.com/6399/14efda6318b9814fa48fffd6e06ba2e4dd623677_00.jpg",
+      "owner": "603Mq69ZrPTHm6vo5zg1rubFLa92",
+      "show_name": true,
+      "points": 3,
+      "author_snapshot": {
+        "uid": "603Mq69ZrPTHm6vo5zg1rubFLa92",
+        "displayName": "Rafael Costas",
+        "nick": "Lo Paco",
+        "avatar": "https://qph.cf2.quoracdn.net/main-qimg-fd6a91badf55d2b9abbcad7f16d161d0-lq"
+      }
+    },
+    {
+      "id": "fa2e0db9-bea4-11ee-855a-0242ac170002",
+      "date": 1706532627502,
+      "content": "las clases de antonio: - tu madre",
+      "media_url": "https://www.lavanguardia.com/andro4all/hero/2023/11/explosion-nuclear.png?width=768&aspect_ratio=16:9&format=nowebp",
+      "owner": "XcdkFt8TgSg794ZQX82WlpaStmn1",
+      "show_name": true,
+      "points": 3,
+      "author_snapshot": {
+        "uid": "XcdkFt8TgSg794ZQX82WlpaStmn1",
+        "displayName": "Pablo Fernández Recamán",
+        "nick": "Reca",
+        "avatar": "https://miro.medium.com/v2/resize:fit:800/1*75fs55VwnrDZ_ET75HP3pw.png"
+      }
+    },
+    {
+      "id": "61801213-be9d-11ee-855a-0242ac170002",
+      "date": 1706529364298,
+      "content": "el pepe en las recus",
+      "media_url": "https://i.pinimg.com/236x/cf/ea/86/cfea867499c5fdf8490ed49a8e856b40.jpg",
+      "owner": "dBG3vIYtxlS9jINUO4DAvGuhXLD3",
+      "show_name": true,
+      "points": 2,
+      "author_snapshot": {
+        "uid": "dBG3vIYtxlS9jINUO4DAvGuhXLD3",
+        "displayName": "Yoel Rey",
+        "nick": "putas SA",
+        "avatar": "https://tn.com.ar/resizer/qS_m4XYM3Jnez5jetBTGxQoY6N0=/767x0/smart/filters:format(webp)/cloudfront-us-east-1.images.arcpublishing.com/artear/2PCP53TADQMWKI3GA7GPJG76NY.jpg"
+      }
+    },
+    {
+      "id": "17721e8f-be9d-11ee-855a-0242ac170002",
+      "date": 1706529240575,
+      "content": "el reca",
+      "media_url": "https://i.ytimg.com/vi/J8u4FWWMQCo/maxresdefault.jpg",
+      "owner": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+      "show_name": true,
+      "points": 1,
+      "author_snapshot": {
+        "uid": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+        "displayName": "Eloy García",
+        "nick": "eloy solucines",
+        "avatar": "https://img.pokemondb.net/sprites/brilliant-diamond-shining-pearl/normal/groudon.png"
+      }
+    },
+    {
+      "id": "cbc9207a-be96-11ee-855a-0242ac170002",
+      "date": 1706526536778,
+      "content": "test",
+      "media_url": null,
+      "owner": "i5iSDJ7UOnOPTYKPk6LpeKhDatA3",
+      "show_name": true,
+      "points": 0,
+      "author_snapshot": {
+        "uid": "i5iSDJ7UOnOPTYKPk6LpeKhDatA3",
+        "displayName": "Gabriel Pazos",
+        "nick": "el_cachimbas",
+        "avatar": "https://img2.rtve.es/i/?w=1600&i=1630933989116.jpg"
+      }
+    },
+    {
+      "id": "aab080e5-bc95-11ee-83a5-0242ac150002",
+      "date": 1706306149346,
+      "content": "Yakuza Zero = Cine",
+      "media_url": "https://c4.wallpaperflare.com/wallpaper/786/138/545/video-game-yakuza-kazuma-kiryu-wallpaper-preview.jpg",
+      "owner": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+      "show_name": true,
+      "points": 1,
+      "author_snapshot": {
+        "uid": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+        "displayName": "Eloy García",
+        "nick": "eloy solucines",
+        "avatar": "https://img.pokemondb.net/sprites/brilliant-diamond-shining-pearl/normal/groudon.png"
+      }
+    },
+    {
+      "id": "6376ef3d-bc3c-11ee-83a5-0242ac150002",
+      "date": 1706267805393,
+      "content": "voy al baño un momento",
+      "media_url": "https://m.media-amazon.com/images/I/51+61m37sHL._UXNaN_FMjpg_QL85_.jpg",
+      "owner": "KGwqP2AoV3bmN5ISAjJ7AFDgfJ62",
+      "show_name": true,
+      "points": 2,
+      "author_snapshot": {
+        "uid": "KGwqP2AoV3bmN5ISAjJ7AFDgfJ62",
+        "displayName": "Joaquín Barreiro García",
+        "nick": "bleisiken",
+        "avatar": "https://64.media.tumblr.com/1ab4e58f63fc5eefd57b1d016e2bcc0f/34767a20142b0c35-b5/s400x600/e4d27a7a38f12582ad3a9edd3477eeb96cce6de6.png"
+      }
+    },
+    {
+      "id": "d4bcec4f-bc3a-11ee-83a5-0242ac150002",
+      "date": 1706267136444,
+      "content": "android..",
+      "media_url": "https://i.imgur.com/ybJDOCj.png",
+      "owner": "KGwqP2AoV3bmN5ISAjJ7AFDgfJ62",
+      "show_name": true,
+      "points": 3,
+      "author_snapshot": {
+        "uid": "KGwqP2AoV3bmN5ISAjJ7AFDgfJ62",
+        "displayName": "Joaquín Barreiro García",
+        "nick": "bleisiken",
+        "avatar": "https://64.media.tumblr.com/1ab4e58f63fc5eefd57b1d016e2bcc0f/34767a20142b0c35-b5/s400x600/e4d27a7a38f12582ad3a9edd3477eeb96cce6de6.png"
+      }
+    },
+    {
+      "id": "d135be32-bc38-11ee-83a5-0242ac150002",
+      "date": 1706266271421,
+      "content": "Anita lava la tina",
+      "media_url": null,
+      "owner": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+      "show_name": true,
+      "points": 0,
+      "author_snapshot": {
+        "uid": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+        "displayName": "Eloy García",
+        "nick": "eloy solucines",
+        "avatar": "https://img.pokemondb.net/sprites/brilliant-diamond-shining-pearl/normal/groudon.png"
+      }
+    },
+    {
+      "id": "ceaabb18-bc25-11ee-83a5-0242ac150002",
+      "date": 1706258103077,
+      "content": "Recadocker y Eloy Soluciones siendo viejos cuando se encuentren en el parque de ancianos",
+      "media_url": "https://phantom-marca.unidadeditorial.es/ee6532291e2e6a8d2700c5f04d03e369/resize/414/f/webp/assets/multimedia/imagenes/2020/03/25/15851188031510.jpg",
+      "owner": "603Mq69ZrPTHm6vo5zg1rubFLa92",
+      "show_name": true,
+      "points": 2,
+      "author_snapshot": {
+        "uid": "603Mq69ZrPTHm6vo5zg1rubFLa92",
+        "displayName": "Rafael Costas",
+        "nick": "Lo Paco",
+        "avatar": "https://qph.cf2.quoracdn.net/main-qimg-fd6a91badf55d2b9abbcad7f16d161d0-lq"
+      }
+    },
+    {
+      "id": "baa31ef5-bc25-11ee-83a5-0242ac150002",
+      "date": 1706258072526,
+      "content": "Reca, ¿sabías que en términos de reproduccion de Pokémon humanos masculinos y femeninos, Vaporeon es el Pokémon más compatible para humanos.",
+      "media_url": null,
+      "owner": "2ou5OUfBoPS9BWfUXIoo8hA0ag42",
+      "show_name": true,
+      "points": 1,
+      "author_snapshot": {
+        "uid": "2ou5OUfBoPS9BWfUXIoo8hA0ag42",
+        "displayName": "Javier González Giménez",
+        "nick": "RogelioButifarra",
+        "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpESQEggSsGBjRNfaWp60rF1VuVmiftg5H0w&usqp=CAU"
+      }
+    },
+    {
+      "id": "40f8746d-bc25-11ee-83a5-0242ac150002",
+      "date": 1706257868668,
+      "content": "Eloy Soluciones VS Recadocker live:",
+      "media_url": "https://i.pinimg.com/originals/e9/95/bb/e995bb0304fbc99a89f5303606ba1769.gif",
+      "owner": "NI4YHwGE3ZXVF041TgXs8CFBCcj1",
+      "show_name": true,
+      "points": 1,
+      "author_snapshot": {
+        "uid": "NI4YHwGE3ZXVF041TgXs8CFBCcj1",
+        "displayName": "Alejandro Blanco Villar",
+        "nick": "Alex'int",
+        "avatar": "https://pbs.twimg.com/media/FraoVbnX0AABMv4.jpg"
+      }
+    },
+    {
+      "id": "0ccb1e09-bc25-11ee-83a5-0242ac150002",
+      "date": 1706257781134,
+      "content": "a ver chicos no se maten",
+      "media_url": "https://www.eluniversal.com.co/sites/default/files/201603/meme.jpeg",
+      "owner": "KGwqP2AoV3bmN5ISAjJ7AFDgfJ62",
+      "show_name": true,
+      "points": 5,
+      "author_snapshot": {
+        "uid": "KGwqP2AoV3bmN5ISAjJ7AFDgfJ62",
+        "displayName": "Joaquín Barreiro García",
+        "nick": "bleisiken",
+        "avatar": "https://64.media.tumblr.com/1ab4e58f63fc5eefd57b1d016e2bcc0f/34767a20142b0c35-b5/s400x600/e4d27a7a38f12582ad3a9edd3477eeb96cce6de6.png"
+      }
+    },
+    {
+      "id": "fc31b526-bc24-11ee-83a5-0242ac150002",
+      "date": 1706257753700,
+      "content": "esto con eloy soluciones no pasaria full stack developer 😎",
+      "media_url": null,
+      "owner": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+      "show_name": true,
+      "points": 3,
+      "author_snapshot": {
+        "uid": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+        "displayName": "Eloy García",
+        "nick": "eloy solucines",
+        "avatar": "https://img.pokemondb.net/sprites/brilliant-diamond-shining-pearl/normal/groudon.png"
+      }
+    },
+    {
+      "id": "83f0b411-bbf4-11ee-83a5-0242ac150002",
+      "date": 1706236935412,
+      "content": "Quiero anunciar que hemos solucionado el incidente de la bd. Hemos podido recuperar el 100% de los datos y mergearlos a los últimos cambios. Hemos encontrado el error y lo hemos solucionado. Además a partir de ahora se harán backups automáticos. Un saludo, recadocker",
+      "media_url": "https://i.blogs.es/71ebf1/1366_2000/1366_2000.jpeg",
+      "owner": "XcdkFt8TgSg794ZQX82WlpaStmn1",
+      "show_name": true,
+      "points": 1,
+      "author_snapshot": {
+        "uid": "XcdkFt8TgSg794ZQX82WlpaStmn1",
+        "displayName": "Pablo Fernández Recamán",
+        "nick": "Reca",
+        "avatar": "https://miro.medium.com/v2/resize:fit:800/1*75fs55VwnrDZ_ET75HP3pw.png"
+      }
+    },
+    {
+      "id": "fa50c64c-bb7d-11ee-b40b-0242ac120002",
+      "date": 1706186023895,
+      "content": "POV TE FUSIONAS CON EL MEMBRILLO",
+      "media_url": "https://media.comicbook.com/2018/05/marvel-comics-symbiote-ranking-phage-1107934.jpeg",
+      "owner": "2ou5OUfBoPS9BWfUXIoo8hA0ag42",
+      "show_name": true,
+      "points": 1,
+      "author_snapshot": {
+        "uid": "2ou5OUfBoPS9BWfUXIoo8hA0ag42",
+        "displayName": "Javier González Giménez",
+        "nick": "RogelioButifarra",
+        "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpESQEggSsGBjRNfaWp60rF1VuVmiftg5H0w&usqp=CAU"
+      }
+    },
+    {
+      "id": "7b92a1ca-bb76-11ee-b40b-0242ac120002",
+      "date": 1706182807470,
+      "content": "el eloy cuando antonio dice que no va a usar IntelliJ",
+      "media_url": "https://www.periodistadigital.com/wp-content/uploads/2015/02/enfadado.jpg",
+      "owner": "dBG3vIYtxlS9jINUO4DAvGuhXLD3",
+      "show_name": true,
+      "points": 2,
+      "author_snapshot": {
+        "uid": "dBG3vIYtxlS9jINUO4DAvGuhXLD3",
+        "displayName": "Yoel Rey",
+        "nick": "putas SA",
+        "avatar": "https://tn.com.ar/resizer/qS_m4XYM3Jnez5jetBTGxQoY6N0=/767x0/smart/filters:format(webp)/cloudfront-us-east-1.images.arcpublishing.com/artear/2PCP53TADQMWKI3GA7GPJG76NY.jpg"
+      }
+    },
+    {
+      "id": "6ad5eb0a-bb73-11ee-b40b-0242ac120002",
+      "date": 1706181490877,
+      "content": "tetasssssssssssssssssssssssssssssss",
+      "media_url": null,
+      "owner": "dBG3vIYtxlS9jINUO4DAvGuhXLD3",
+      "show_name": true,
+      "points": 0,
+      "author_snapshot": {
+        "uid": "dBG3vIYtxlS9jINUO4DAvGuhXLD3",
+        "displayName": "Yoel Rey",
+        "nick": "putas SA",
+        "avatar": "https://tn.com.ar/resizer/qS_m4XYM3Jnez5jetBTGxQoY6N0=/767x0/smart/filters:format(webp)/cloudfront-us-east-1.images.arcpublishing.com/artear/2PCP53TADQMWKI3GA7GPJG76NY.jpg"
+      }
+    },
+    {
+      "id": "fb4626dd-bb71-11ee-b40b-0242ac120002",
+      "date": 1706180872179,
+      "content": "recaman borrando la base de datos sin querer",
+      "media_url": "https://media1.tenor.com/m/NfHRXscefKoAAAAC/spy-kids-lemme-zoom-in-on-that.gif",
+      "owner": "KGwqP2AoV3bmN5ISAjJ7AFDgfJ62",
+      "show_name": false,
+      "points": 0,
+      "author_snapshot": null
+    },
+    {
+      "id": "d4b45693-bb71-11ee-b40b-0242ac120002",
+      "date": 1706180806849,
+      "content": "Pepe: I'm Biden and I'm dry",
+      "media_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyFPXzogmF637YbinbuZzkxn0hp8jZO3YMYvg4aQSM1OTiRGMXIMhmHXsj_8tDMXeje2I&usqp=CAU",
+      "owner": "2ou5OUfBoPS9BWfUXIoo8hA0ag42",
+      "show_name": true,
+      "points": 1,
+      "author_snapshot": {
+        "uid": "2ou5OUfBoPS9BWfUXIoo8hA0ag42",
+        "displayName": "Javier González Giménez",
+        "nick": "RogelioButifarra",
+        "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpESQEggSsGBjRNfaWp60rF1VuVmiftg5H0w&usqp=CAU"
+      }
+    },
+    {
+      "id": "80b9f75c-bb6d-11ee-b40b-0242ac120002",
+      "date": 1706178948231,
+      "content": "soy ese",
+      "media_url": "https://i.imgflip.com/4zrd23.png",
+      "owner": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+      "show_name": true,
+      "points": 0,
+      "author_snapshot": {
+        "uid": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+        "displayName": "Eloy García",
+        "nick": "eloy solucines",
+        "avatar": "https://img.pokemondb.net/sprites/brilliant-diamond-shining-pearl/normal/groudon.png"
+      }
+    },
+    {
+      "id": "df636bf3-bb6c-11ee-b40b-0242ac120002",
+      "date": 1706178677519,
+      "content": "recaman borraste historia del cine",
+      "media_url": null,
+      "owner": null,
+      "show_name": false,
+      "points": 0,
+      "author_snapshot": null
+    },
+    {
+      "id": "7afc017b-bb62-11ee-8068-0242c0a86002",
+      "date": 1706174213815,
+      "content": "Pov: Ves a Eloy dandose  cuenta de que se equivoca",
+      "media_url": "https://media.tenor.com/Z079HyqvniQAAAAM/john-marston-john-marston-death.gif",
+      "owner": "2ou5OUfBoPS9BWfUXIoo8hA0ag42",
+      "show_name": true,
+      "points": 1,
+      "author_snapshot": {
+        "uid": "2ou5OUfBoPS9BWfUXIoo8hA0ag42",
+        "displayName": "Javier González Giménez",
+        "nick": "RogelioButifarra",
+        "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpESQEggSsGBjRNfaWp60rF1VuVmiftg5H0w&usqp=CAU"
+      }
+    },
+    {
+      "id": "12171f09-bb60-11ee-8068-0242c0a86002",
+      "date": 1706173181828,
+      "content": "Eloy cuando todo el mundo le traiciona:",
+      "media_url": "https://static.wikia.nocookie.net/0558face-de5d-47b5-857b-8abb47bb1c5c",
+      "owner": null,
+      "show_name": false,
+      "points": 0,
+      "author_snapshot": null
+    },
+    {
+      "id": "eb8f9a1f-bb5f-11ee-8068-0242c0a86002",
+      "date": 1706173114814,
+      "content": "Pedro sin perra idea de con que llenar lo que queda de clase mirando a fran entrar",
+      "media_url": "https://us-tuna-sounds-images.voicemod.net/6ed84bfe-40af-46e4-881e-63ee331c799e-1703078225370.jpg",
+      "owner": "KGwqP2AoV3bmN5ISAjJ7AFDgfJ62",
+      "show_name": true,
+      "points": 0,
+      "author_snapshot": {
+        "uid": "KGwqP2AoV3bmN5ISAjJ7AFDgfJ62",
+        "displayName": "Joaquín Barreiro García",
+        "nick": "bleisiken",
+        "avatar": "https://64.media.tumblr.com/1ab4e58f63fc5eefd57b1d016e2bcc0f/34767a20142b0c35-b5/s400x600/e4d27a7a38f12582ad3a9edd3477eeb96cce6de6.png"
+      }
+    },
+    {
+      "id": "741151ac-bb5f-11ee-8068-0242c0a86002",
+      "date": 1706172914303,
+      "content": "Eloy cuando dice que su codigo es backend",
+      "media_url": "https://i.kym-cdn.com/entries/icons/original/000/031/403/template1.jpg",
+      "owner": "KGwqP2AoV3bmN5ISAjJ7AFDgfJ62",
+      "show_name": true,
+      "points": 0,
+      "author_snapshot": {
+        "uid": "KGwqP2AoV3bmN5ISAjJ7AFDgfJ62",
+        "displayName": "Joaquín Barreiro García",
+        "nick": "bleisiken",
+        "avatar": "https://64.media.tumblr.com/1ab4e58f63fc5eefd57b1d016e2bcc0f/34767a20142b0c35-b5/s400x600/e4d27a7a38f12582ad3a9edd3477eeb96cce6de6.png"
+      }
+    },
+    {
+      "id": "3fdaae28-bb5e-11ee-8068-0242c0a86002",
+      "date": 1706172396685,
+      "content": "Como supiste?nComo supiste que quedé con Yowy",
+      "media_url": "https://i.makeagif.com/media/6-09-2016/9wFapi.gif",
+      "owner": "2ou5OUfBoPS9BWfUXIoo8hA0ag42",
+      "show_name": true,
+      "points": 0,
+      "author_snapshot": {
+        "uid": "2ou5OUfBoPS9BWfUXIoo8hA0ag42",
+        "displayName": "Javier González Giménez",
+        "nick": "RogelioButifarra",
+        "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpESQEggSsGBjRNfaWp60rF1VuVmiftg5H0w&usqp=CAU"
+      }
+    },
+    {
+      "id": "c93f4e28-bb5d-11ee-8068-0242c0a86002",
+      "date": 1706172197659,
+      "content": "Yowy",
+      "media_url": "https://gear.bethesda.net/cdn/shop/products/GRID-1_f3075cf2-7ab9-4e86-8c72-b95788a35e16.jpg?v=1645208231",
+      "owner": "2ou5OUfBoPS9BWfUXIoo8hA0ag42",
+      "show_name": true,
+      "points": 0,
+      "author_snapshot": {
+        "uid": "2ou5OUfBoPS9BWfUXIoo8hA0ag42",
+        "displayName": "Javier González Giménez",
+        "nick": "RogelioButifarra",
+        "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpESQEggSsGBjRNfaWp60rF1VuVmiftg5H0w&usqp=CAU"
+      }
+    },
+    {
+      "id": "9fbb31c4-babd-11ee-8068-0242c0a86002",
+      "date": 1706103408592,
+      "content": "El negro negraco",
+      "media_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM2bJFTGARyqnWdnIkzO5AWBMUZmw1i_AfinDgNT7Z57xIZ95IGPf7fWYCGHb-wTZeFXA&usqp=CAU",
+      "owner": "2ou5OUfBoPS9BWfUXIoo8hA0ag42",
+      "show_name": true,
+      "points": 0,
+      "author_snapshot": {
+        "uid": "2ou5OUfBoPS9BWfUXIoo8hA0ag42",
+        "displayName": "Javier González Giménez",
+        "nick": "RogelioButifarra",
+        "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpESQEggSsGBjRNfaWp60rF1VuVmiftg5H0w&usqp=CAU"
+      }
+    },
+    {
+      "id": "ac12c03b-baba-11ee-8068-0242c0a86002",
+      "date": 1706102140825,
+      "content": "chuchas donde dejé mi inhalador",
+      "media_url": null,
+      "owner": "i5iSDJ7UOnOPTYKPk6LpeKhDatA3",
+      "show_name": true,
+      "points": 0,
+      "author_snapshot": {
+        "uid": "i5iSDJ7UOnOPTYKPk6LpeKhDatA3",
+        "displayName": "Gabriel Pazos",
+        "nick": "el_cachimbas",
+        "avatar": "https://img2.rtve.es/i/?w=1600&i=1630933989116.jpg"
+      }
+    },
+    {
+      "id": "7e6d8652-baba-11ee-8068-0242c0a86002",
+      "date": 1706102064248,
+      "content": "xd",
+      "media_url": null,
+      "owner": null,
+      "show_name": false,
+      "points": 0,
+      "author_snapshot": null
+    },
+    {
+      "id": "7cef62ad-baba-11ee-8068-0242c0a86002",
+      "date": 1706102061743,
+      "content": "Porque no voy a clase",
+      "media_url": null,
+      "owner": null,
+      "show_name": false,
+      "points": 0,
+      "author_snapshot": null
+    },
+    {
+      "id": "77ad15bc-baba-11ee-8068-0242c0a86002",
+      "date": 1706102052870,
+      "content": "Gano yo",
+      "media_url": null,
+      "owner": null,
+      "show_name": false,
+      "points": 0,
+      "author_snapshot": null
+    },
+    {
+      "id": "0fed6ea9-baba-11ee-8068-0242c0a86002",
+      "date": 1706101880070,
+      "content": "peter , rafa , zoel , yowy ,galpos, alex fichaos",
+      "media_url": null,
+      "owner": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+      "show_name": true,
+      "points": 0,
+      "author_snapshot": {
+        "uid": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+        "displayName": "Eloy García",
+        "nick": "eloy solucines",
+        "avatar": "https://img.pokemondb.net/sprites/brilliant-diamond-shining-pearl/normal/groudon.png"
+      }
+    },
+    {
+      "id": "ea253df8-bab5-11ee-8068-0242c0a86002",
+      "date": 1706100099892,
+      "content": "Eloy to'o de chill presentando su proyecto dedicado a DittonNintendo espiando su \"backend\":",
+      "media_url": "https://imgs.hipertextual.com/wp-content/uploads/2024/01/palworld-scaled.jpg",
+      "owner": null,
+      "show_name": false,
+      "points": 0,
+      "author_snapshot": null
+    },
+    {
+      "id": "558a8c79-bab5-11ee-8068-0242c0a86002",
+      "date": 1706099850571,
+      "content": "Eloy y Recaman causando estragos en su duelo de titanes:",
+      "media_url": "https://qph.cf2.quoracdn.net/main-qimg-32336fe8004024154f503c525a25831b-lq",
+      "owner": null,
+      "show_name": false,
+      "points": 0,
+      "author_snapshot": null
+    },
+    {
+      "id": "bb0752ae-bab4-11ee-8068-0242c0a86002",
+      "date": 1706099584446,
+      "content": "Yo de chill tallando mientras los de atrás se pelean porque no sé que mierda de Full Stack",
+      "media_url": "https://i.imgflip.com/5c0ibx.jpg",
+      "owner": "603Mq69ZrPTHm6vo5zg1rubFLa92",
+      "show_name": true,
+      "points": 0,
+      "author_snapshot": {
+        "uid": "603Mq69ZrPTHm6vo5zg1rubFLa92",
+        "displayName": "Rafael Costas",
+        "nick": "Lo Paco",
+        "avatar": "https://qph.cf2.quoracdn.net/main-qimg-fd6a91badf55d2b9abbcad7f16d161d0-lq"
+      }
+    },
+    {
+      "id": "f9bf5b48-baaf-11ee-8068-0242c0a86002",
+      "date": 1706097548517,
+      "content": "average trabajador  de deloites  en la sala del cafe para no suicidarse",
+      "media_url": "https://eurogrow.es/img/cms/0000/famosos-que-fuman-porros/snoop-dog-fumando-marihuana.jpg",
+      "owner": null,
+      "show_name": false,
+      "points": 0,
+      "author_snapshot": null
+    },
+    {
+      "id": "f2d831e3-b9db-11ee-8068-0242c0a86002",
+      "date": 1706006482350,
+      "content": "yo: ey javinel javi :",
+      "media_url": "https://i.ytimg.com/vi/ZXP2u3Kpd-M/maxresdefault.jpg",
+      "owner": "i5iSDJ7UOnOPTYKPk6LpeKhDatA3",
+      "show_name": true,
+      "points": 0,
+      "author_snapshot": {
+        "uid": "i5iSDJ7UOnOPTYKPk6LpeKhDatA3",
+        "displayName": "Gabriel Pazos",
+        "nick": "el_cachimbas",
+        "avatar": "https://img2.rtve.es/i/?w=1600&i=1630933989116.jpg"
+      }
+    },
+    {
+      "id": "8076240f-b9d0-11ee-8068-0242c0a86002",
+      "date": 1706001566006,
+      "content": "Solucionamelano",
+      "media_url": null,
+      "owner": "NI4YHwGE3ZXVF041TgXs8CFBCcj1",
+      "show_name": true,
+      "points": 0,
+      "author_snapshot": {
+        "uid": "NI4YHwGE3ZXVF041TgXs8CFBCcj1",
+        "displayName": "Alejandro Blanco Villar",
+        "nick": "Alex'int",
+        "avatar": "https://pbs.twimg.com/media/FraoVbnX0AABMv4.jpg"
+      }
+    },
+    {
+      "id": "e6e711f3-b9cf-11ee-8068-0242c0a86002",
+      "date": 1706001307990,
+      "content": "eloy soluciones muchas soluciones para muchos eloy de soluciones eloy que soluciona",
+      "media_url": null,
+      "owner": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+      "show_name": true,
+      "points": 0,
+      "author_snapshot": {
+        "uid": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+        "displayName": "Eloy García",
+        "nick": "eloy solucines",
+        "avatar": "https://img.pokemondb.net/sprites/brilliant-diamond-shining-pearl/normal/groudon.png"
+      }
+    },
+    {
+      "id": "cb60b032-b9cf-11ee-8068-0242c0a86002",
+      "date": 1706001261782,
+      "content": "yo te help you alex'int son five dolars",
+      "media_url": null,
+      "owner": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+      "show_name": true,
+      "points": 0,
+      "author_snapshot": {
+        "uid": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+        "displayName": "Eloy García",
+        "nick": "eloy solucines",
+        "avatar": "https://img.pokemondb.net/sprites/brilliant-diamond-shining-pearl/normal/groudon.png"
+      }
+    },
+    {
+      "id": "f53287f1-b9ce-11ee-8068-0242c0a86002",
+      "date": 1706000902299,
+      "content": "Es responsive??",
+      "media_url": "https://i.kym-cdn.com/photos/images/newsfeed/001/741/229/1d0.jpg",
+      "owner": "KGwqP2AoV3bmN5ISAjJ7AFDgfJ62",
+      "show_name": true,
+      "points": 0,
+      "author_snapshot": {
+        "uid": "KGwqP2AoV3bmN5ISAjJ7AFDgfJ62",
+        "displayName": "Joaquín Barreiro García",
+        "nick": "bleisiken",
+        "avatar": "https://64.media.tumblr.com/1ab4e58f63fc5eefd57b1d016e2bcc0f/34767a20142b0c35-b5/s400x600/e4d27a7a38f12582ad3a9edd3477eeb96cce6de6.png"
+      }
+    },
+    {
+      "id": "80ca1b66-b9ce-11ee-8068-0242c0a86002",
+      "date": 1706000706950,
+      "content": "El sistema circulatorio de Joaquín durante su presentación",
+      "media_url": "https://media.tenor.com/2CzkqN2weO4AAAAM/rip-windsors-wifi.gif",
+      "owner": "2ou5OUfBoPS9BWfUXIoo8hA0ag42",
+      "show_name": true,
+      "points": 0,
+      "author_snapshot": {
+        "uid": "2ou5OUfBoPS9BWfUXIoo8hA0ag42",
+        "displayName": "Javier González Giménez",
+        "nick": "RogelioButifarra",
+        "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpESQEggSsGBjRNfaWp60rF1VuVmiftg5H0w&usqp=CAU"
+      }
+    },
+    {
+      "id": "0b32e4e4-b9cd-11ee-8068-0242c0a86002",
+      "date": 1706000080814,
+      "content": "@eloy soluciones, im stuck in the air fryer, please help me",
+      "media_url": null,
+      "owner": "NI4YHwGE3ZXVF041TgXs8CFBCcj1",
+      "show_name": true,
+      "points": 0,
+      "author_snapshot": {
+        "uid": "NI4YHwGE3ZXVF041TgXs8CFBCcj1",
+        "displayName": "Alejandro Blanco Villar",
+        "nick": "Alex'int",
+        "avatar": "https://pbs.twimg.com/media/FraoVbnX0AABMv4.jpg"
+      }
+    },
+    {
+      "id": "e20df797-b9cc-11ee-8068-0242c0a86002",
+      "date": 1706000011369,
+      "content": "meu cortate un poco xd",
+      "media_url": null,
+      "owner": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+      "show_name": true,
+      "points": 0,
+      "author_snapshot": {
+        "uid": "jLfEgRLeC1UOFa6PwBdeYzkXIR82",
+        "displayName": "Eloy García",
+        "nick": "eloy solucines",
+        "avatar": "https://img.pokemondb.net/sprites/brilliant-diamond-shining-pearl/normal/groudon.png"
+      }
+    },
+    {
+      "id": "7618f767-b9cc-11ee-8068-0242c0a86002",
+      "date": 1705999830841,
+      "content": "salgan de 4dam quiero estar solo",
+      "media_url": null,
+      "owner": "i5iSDJ7UOnOPTYKPk6LpeKhDatA3",
+      "show_name": true,
+      "points": 0,
+      "author_snapshot": {
+        "uid": "i5iSDJ7UOnOPTYKPk6LpeKhDatA3",
+        "displayName": "Gabriel Pazos",
+        "nick": "el_cachimbas",
+        "avatar": "https://img2.rtve.es/i/?w=1600&i=1630933989116.jpg"
+      }
+    },
+    {
+      "id": "9a18c093-b94b-11ee-8068-0242c0a86002",
+      "date": 1705944485251,
+      "content": "el galpos",
+      "media_url": "https://lafuerzanoticias.files.wordpress.com/2018/04/lobot.png",
+      "owner": null,
+      "show_name": false,
+      "points": 0,
+      "author_snapshot": null
+    },
+    {
+      "id": "5406f668-b94a-11ee-8068-0242c0a86002",
+      "date": 1705943938212,
+      "content": "departamento de marketing hiyosuuh",
+      "media_url": "https://i0.wp.com/www.negociosmagazine.com/wp-content/uploads/2017/12/Jack_Ma-e1513164617647.png?resize=726%2C400&ssl=1",
+      "owner": null,
+      "show_name": false,
+      "points": 0,
+      "author_snapshot": null
+    },
+    {
+      "id": "f5a241b1-b948-11ee-8068-0242c0a86002",
+      "date": 1705943350450,
+      "content": "Pov: Contraste Eloy soluciones para que elimine una plaga en tu casa",
+      "media_url": "https://steamuserimages-a.akamaihd.net/ugc/1746853357793071954/CA1716A22A26A4282C26BFCC7C32F238689ECC9C/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+      "owner": null,
+      "show_name": false,
+      "points": 0,
+      "author_snapshot": null
+    },
+    {
+      "id": "2e86f512-b947-11ee-8068-0242c0a86002",
+      "date": 1705942586870,
+      "content": "Isabel refiriéndose a Galpos: si trabajas los findes es porque no tienes vida social.nGalpos:",
+      "media_url": "https://media1.tenor.com/m/2Y1qimySLIIAAAAC/messi-lionel-messi.gif",
+      "owner": null,
+      "show_name": false,
+      "points": 0,
+      "author_snapshot": null
+    },
+    {
+      "id": "8f105ed2-b941-11ee-8068-0242c0a86002",
+      "date": 1705940171890,
+      "content": "Los recreos de FP básica",
+      "media_url": "https://previews.123rf.com/images/gorgev/gorgev2201/gorgev220131962/180887860-dos-delincuentes-est%C3%A1n-en-una-habitaci%C3%B3n-llena-de-humo-uno-de-ellos-apunta-con-un-arma-a-su.jpg",
+      "owner": null,
+      "show_name": false,
+      "points": 0,
+      "author_snapshot": null
+    },
+    {
+      "id": "b1183094-b92b-11ee-8068-0242c0a86002",
+      "date": 1705930780027,
+      "content": "Resumen de la clase de hoy:nRecaman:",
+      "media_url": "https://cdn.discordapp.com/attachments/1196723224726220824/1198979443662798889/IMG_3345.jpg?ex=65c0df9f&is=65ae6a9f&hm=4643a43b71259e86d3711e4ba1641184fda22feb1dcf03cde339e5aaeae3e076&",
+      "owner": null,
+      "show_name": false,
+      "points": 0,
+      "author_snapshot": null
+    },
+    {
+      "id": "a86bd115-b6b0-11ee-8068-0242c0a86002",
+      "date": 1705658035123,
+      "content": "el pepe en corto",
+      "media_url": "https://upload.wikimedia.org/wikipedia/en/6/6c/Troymcclure.png",
+      "owner": null,
+      "show_name": false,
+      "points": 0,
+      "author_snapshot": null
+    },
+    {
+      "id": "85b9b21c-b633-11ee-9da0-0242ac180002",
+      "date": 1705604289713,
+      "content": "Xaqui y Reca deployando despues de 4 millones de años la nueva version de 4DAM",
+      "media_url": "https://img.freepik.com/fotos-premium/empresario-cortar-cinta-roja-par-tijeras_93675-14388.jpg",
+      "owner": "XcdkFt8TgSg794ZQX82WlpaStmn1",
+      "show_name": true,
+      "points": 0,
+      "author_snapshot": {
+        "uid": "XcdkFt8TgSg794ZQX82WlpaStmn1",
+        "displayName": "Pablo Fernández Recamán",
+        "nick": "Reca",
+        "avatar": "https://miro.medium.com/v2/resize:fit:800/1*75fs55VwnrDZ_ET75HP3pw.png"
+      }
+    }
+  ]
+}
