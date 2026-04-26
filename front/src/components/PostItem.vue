@@ -26,9 +26,9 @@
           :src="resolvedMediaUrl"
           loading="lazy"
           spinner-color="white"
-          height="30rem"
-          ratio="1"
-          fit="scale-down"
+          width="595px"
+          height="595px"
+          fit="contain"
           class="rounded-borders archive-image"
           @error="useFallbackImage"
         />
@@ -124,8 +124,16 @@ export default {
 }
 
 .archive-image {
-  width: 100%;
+  max-width: 100%;
   background: rgba(0, 0, 0, 0.04);
+}
+
+@media screen and (max-width: 600px) {
+  .archive-image {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 1 / 1;
+  }
 }
 
 .post:not(:first-child) {

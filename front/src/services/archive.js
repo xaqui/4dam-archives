@@ -84,9 +84,11 @@ export async function getWorstPosts() {
 
 export async function getPeople() {
   const archive = await getArchive();
-  return cloneItems(archive.users).sort((left, right) => {
-    const leftLabel = left.nick || left.displayName || left.uid;
-    const rightLabel = right.nick || right.displayName || right.uid;
-    return leftLabel.localeCompare(rightLabel) || left.uid.localeCompare(right.uid);
-  });
+  return cloneItems(archive.users)
+    .filter((user) => (user.displayName || "") !== "Anonymous")
+    .sort((left, right) => {
+      const leftLabel = left.nick || left.displayName || left.uid;
+      const rightLabel = right.nick || right.displayName || right.uid;
+      return leftLabel.localeCompare(rightLabel) || left.uid.localeCompare(right.uid);
+    });
 }

@@ -432,6 +432,12 @@ function makePostExactKey(date, content, mediaUrl) {
   return [date, (content || "").trim(), mediaUrl || ""].join("|");
 }
 
+function sortPostsByDateDesc(posts) {
+  return posts.sort(
+    (left, right) => right.date - left.date || left.id.localeCompare(right.id)
+  );
+}
+
 function normalizeFirestoreUser(doc) {
   const data = doc && typeof doc === "object" ? doc.data || {} : {};
   const uid = normalizeEmptyString(data.userId || doc.id);
@@ -662,15 +668,13 @@ function mergeFinalPosts(sqlPosts, firestorePosts, state) {
     merged.push(post);
   }
 
-  return merged.sort(
-    (left, right) => right.date - left.date || left.id.localeCompare(right.id)
-  );
+  return sortPostsByDateDesc(merged);
 }
 
 function buildArchive(state, dumpFiles) {
   const sqlPosts = buildSqlPosts(state);
   const firestorePosts = buildFirestorePosts(state);
-  const posts = mergeFinalPosts(sqlPosts, firestorePosts, state);
+  const posts = sortPostsByDateDesc(mergeFinalPosts(sqlPosts, firestorePosts, state));
   const users = buildFinalUsers(state);
 
   const archive = {
